@@ -1,0 +1,2737 @@
+Apache Hadoop
+What are the main components of a Hadoop Application?
+What is the core concept behind Apache Hadoop framework?
+What is Hadoop Streaming?
+What is the difference between Nodes in HDFS?
+What is the optimum hardware configuration to run Apache Hadoop?
+What do you know about Block and Block scanner in HDFS?
+What are the default port numbers on which Nodes run in Hadoop?
+How will you disable a Block Scanner on HDFS DataNode?
+How will you get the distance between two nodes in Apache Hadoop?
+Why do we use commodity hardware in Hadoop?
+How does inter cluster data copying works in Hadoop?
+How can we update a file at an arbitrary location in HDFS?
+What is Replication factor in HDFS?
+What is the difference between NAS and DAS in Hadoop cluster?
+What are the two messages that NameNode receives from DataNode?
+How does indexing work in Hadoop?
+What data is stored in a HDFS NameNode?
+What would happen if NameNode crashes in a HDFS cluster?
+What are the main functions of Secondary NameNode?
+What happens if HDFS file is set with replication factor of 1 and DataNode crashes?
+What is the meaning of Rack Awareness in Hadoop?
+How will you check if a file exists in HDFS?
+Why do we use fsck command in HDFS?
+What will happen when NameNode is down and a user submits a new job?
+What are the core methods of a Reducer in Hadoop?
+What are the primary phases of a Reducer in Hadoop?
+What is the use of Context object in Hadoop?
+How does partitioning work in Hadoop?
+What is a Combiner in Hadoop?
+What is the default replication factor in HDFS?
+How much storage is allocated by HDFS for storing a file of 25 MB size?
+Why does HDFS store data in Block structure?
+How will you create a custom Partitioner in a Hadoop job?
+What is a Checkpoint node in HDFS?
+What is a Backup Node in HDFS?
+What is the meaning of term Data Locality in Hadoop?
+What is a Balancer in HDFS?
+What are the important points a NameNode considers before selecting the DataNode for placing a data block?
+How will you replace HDFS data volume before shutting down a DataNode?
+What are the important configuration files in Hadoop?
+How will you monitor memory used in a Hadoop cluster?
+Why do we need Serialization in Hadoop map reduce methods?
+What is the use of Distributed Cache in Hadoop?
+How will you synchronize the changes made to a file in Distributed Cache in Hadoop?
+Can you elaborate about Mapreduce Job
+Why compute nodes and the storage nodes are the same?
+What is the configuration object importance in Mapreduce?
+Where Mapreduce not recommended?
+What is Namenode and it’s responsibilities?
+What is Jobtracker’s responsibility?
+What are the Jobtracker and Tasktracker?
+What is Job scheduling importance in Hadoop Mapreduce?
+When used Reducer?
+Where the Shuffle and Sort process does?
+Java is mandatory to write Mapreduce Jobs?
+What methods can controle the Map And Reduce function’s output?
+What is the main difference between Mapper And Reducer?
+Why compute Nodes and the Storage Nodes are same?
+What is difference between mapside join and reduce side join?
+What happen if number of Reducer is 0?
+When we are goes to Combiner? Why it is Recommendable?
+What is the main difference between Mapreduce Combiner and Reducer?
+What Is Partition?
+When we goes to Partition?
+What are the important steps when you are partitioning table?
+Can you elaborate Mapreduce Job architecture?
+Why task Tracker launch child Jvm?
+Why JobClient and Job Tracker submits job resources to file system?
+How many Mappers and Reducers can run?
+What is InputSplit?
+How to configure the split value?
+How much ram required to process 64mb data?
+What is difference between block And split?
+Why Hadoop Framework reads a file parallel why not sequential?
+If I am change block size from 64 to 128?
+What is IsSplitable()?
+How much Hadoop allows maximum block size and minimum block size?
+What are the Job Resource files?
+What’s the Mapreduce Job consists?
+What is the data locality?
+What is speculative execution?
+What is chain Mapper?
+How to do value level comparison?
+What is setup and clean up methods?
+How many slots allocate for each task?
+Why TaskTracker launch child Jvm to do a task? Why not use Existent Jvm?
+What main configuration parameters are specified in Mapreduce?
+What is identity Mapper?
+What is RecordReader in a MapReduce?
+What is OutputCommitter?
+What are the parameters of Mappers and Reducers?
+Explain JobConf in Mapreduce?
+Explain Job scheduling through Jobtracker?
+What is SequenceFileInputFormat?
+Explain how input and output data format of the Hadoop Framework?
+What are the restriction to the Key and Value Class ?
+Explain the wordcount implementation via Hadoop Framework?
+How Mapper is instantiated in a running Job?
+Which are the methods in the Mapper Interface?
+What happens if You don't Override the Mapper methods and keep them as it is?
+What is the use of context Object?
+How can you Add the arbitrary Key-value pairs in your Mapper?
+How Does Mapper's Run() Method Works?
+Which Object can be used to get the progress of a particular Job?
+What is next step after Mapper Or Maptask?
+How can we control particular Key should go in a specific Reducer?
+What is the use of Combiner?
+How many Maps are there in a particular Job?
+What is the Reducer used for?
+Explain the core methods of the Reducer?
+What are the primary phases of the Reducer?
+Explain the Shuffle?
+Explain the Reducer's sort phase?
+Explain the Reducer's reduce phase?
+How many Reducers should be configured?
+It can be possible that a Job has 0 Reducers?
+What happens if number of Reducers are 0?
+How many instances of Jobtracker can run on a Hadoop Cluster?
+What is the Jobtracker and what it performs in a Hadoop Cluster?
+How a task is scheduled by a Jobtracker?
+How many instances of Tasktracker run on a Hadoop Cluster?
+How many maximum Jvm can run on a Slave Node?
+What is Nas?
+How Hdfs differs with Nfs?
+How does a NameNode handle the failure of the Data Nodes?
+Can Reducer talk with each other?
+Where the Mapper's intermediate data will be stored?
+What is the Hadoop Mapreduce api contract for a Key and Value Class?
+What is a IdentityMapper and IdentityReducer in Mapreduce?
+What is the meaning of Speculative Execution in Hadoop?
+How Hdfs is different from traditional File Systems?
+What is Hdfs block size and how is it different from Traditional File System block size?
+What is a NameNode and how many instances of NameNode run on a Hadoop Cluster?
+How the client communicates with Hdfs?
+How the Hdfs blocks are replicated?
+Can you give some examples of Big Data?
+What is the basic difference between traditional Rdbms and Hadoop?
+What is structured and unstructured Data?
+Since the data is replicated thrice in Hdfs so does it mean that any calculation done on One Node will also be replicated on the other Two?
+What is throughput and how does Hdfs get a good throughput?
+What is streaming access?
+What is a Commodity Hardware so does Commodity Hardware include Ram?
+Is NameNode also a Commodity?
+What is a Metadata?
+What is a Daemon?
+What is a Heartbeat in Hdfs?
+How indexing is done in Hdfs?
+If a Data Node is full how it's identified?
+If DataNodes increase then do we need to upgrade NameNode?
+Are Job Tracker and Task Trackers present in separate machines?
+On what basis NameNode will decide which DataNode to write on?
+Who is a user in Hdfs?
+Is client the end user in Hdfs?
+What is the Communication Channel between client and NameNode/DataNode?
+What is a Rack?
+On what basis Data will be stored on a Rack?
+Do we need to place 2nd and 3rd Data in Rack 2 only?
+What if Rack 2 and DataNode fails?
+What is the difference between Gen1 and Gen2 Hadoop with regards to the NameNode?
+Do we require two servers for the NameNode and the DataNodes?
+Why are the number of splits equal to the number of Maps?
+Is a Job split into maps?
+Which are the two types of writes in Hdfs?
+Why reading is done in parallel and writing is not in Hdfs?
+Can Hadoop be compared to Nosql Database like Cassandra?
+How JobTracker schedules a task?
+What is a Task Tracker in Hadoop and how many instances of Task Tracker run on a Hadoop Cluster?
+What is a task instance in Hadoop and where does it run?
+What is configuration of a typical Slave Node on Hadoop Cluster and how many Jvms run on a Slave Node?
+How NameNode handles DataNode failures?
+Does Mapreduce programming model provide a way for Reducers to communicate with each other and in a Mapreduce Job can a Reducer communicate with another Reducer?
+Can I set the number of Reducers to Zero?
+Where is the Mapper Output intermediate Kay-value data stored?
+If Reducers do not start before all Mappers finish then why does the progress on Mapreduce Job shows something like Map 50 percents Reduce 10 percents and why Reducers progress percentage is displayed when Mapper is not Finished yet?
+Explain in brief the three Modes in which Hadoop can be run?
+Explain what are the features of Standalone local Mode?
+What are the features of fully distributed mode?
+Explain what are the main features Of pseudo mode?
+What are the port numbers of NameNode and JobTracker and TaskTracker?
+Tell us what is a spill factor with respect to the ram?
+Is fs.mapr working for a single directory?
+Which are the three main Hdfs-site.xml properties?
+How can I restart NameNode?
+How can we check whether Namenode is working or not?
+At times you get a connection refused Java Exception when you run the file system check command Hadoop fsck?
+What is the use of the command Mapred.job.tracker?
+What does etc/init.d do?
+How can we look for the Namenode in the browser?
+What do masters and slaves consist of?
+What is the function Of Hadoop-env.sh and where is it present?
+Can we have multiple entries in the master files?
+In Hadoop_pid_dir and what does pid stands for?
+What does Hadoop-metrics and properties file do?
+What are the network requirements for hadoop?
+Why do we need a password-less ssh in fully distributed environment?
+What will happen if a NameNode has no data?
+What happens to job tracker when NameNode is down?
+Explain what do you mean by formatting of the Dfs?
+We use Unix variants for hadoop and can we use Microsoft Windows for the same?
+Which one decides the input split hdfs client or NameNode?
+Can you tell me if we can create a hadoop cluster from scratch?
+Explain the significance of ssh and what is the port on which port does ssh work and why do we need password in ssh local host?
+What is ssh and explain in detail about ssh communication between masters and the slaves?
+Can You Tell Is What Will Happen To A NameNode and When Job Tracker Is Not Up And Running?
+Table of Contents
+
+Apache Flume
+What is Flume?
+What is Apache Flume?
+Which is the reliable channel in Flume to ensure that there is no Data Loss?
+How can Flume be used with Hbase?
+What is an Agent?
+Is it possible to Leverage Real Time Analysis on the Big Data collected by Flume directly?
+What is a Channel?
+Explain about the different channel types in Flume and which channel type is faster?
+Explain about the replication and multiplexing selectors in Flume?
+Does Apache Flume provide support for third party Plugins?
+Differentiate between FileSink and FileRollSink?
+Why we are using Flume?
+What is Flumeng?
+What are the complicated steps in Flume configurations?
+What are Flume core components?
+What are the Data Extraction Tools in Hadoop?
+Does Flume provide 100% reliability to the Data Flow?
+Tell any two Features of Flume?
+What are Interceptors?
+Why Flume?
+What is Flume Event?
+How Multi hop agent can be setup in Flume?
+Can Flume can distribute data to multiple destinations?
+Can you explain about configuration files?
+What are the similarities and differences between Apache Flume and Apache Kafka?
+Explain Reliability and Failure Handling in Apache Flume?
+Table of Contents
+
+Apache NiFi
+What is Apache Nifi?
+What is Nifi FlowFile?
+What is Relationship in Nifi DataFlow?
+What is Reporting Task?
+What is a Nifi Processor?
+Is there a programming language that Apache Nifi supports?
+How do you define Nifi content Repository?
+What is the Backpressure in Nifi system?
+What is the template in Nifi?
+What is the bulleting and how it helps in Nifi?
+Do the attributes get added to content (actual Data) when data is pulled by Nifi?
+What happens if you have stored a password in a dataflow and create a template out of it?
+How does Nifi support huge volume of Payload in a Dataflow?
+What is a Nifi custom properties registry?
+Does Nifi works as a Master Slave architecture?
+Table of Contents
+
+Apache Avro
+What is Apache Avro?
+State some Key Points about Apache Avro?
+What Avro Offers?
+Who is intended audience to Learn Avro?
+What are prerequisites to learn Avro?
+Explain Avro schemas?
+Explain Thrift and Protocol Buffers and Avro?
+Why Avro?
+How to use Avro?
+Name some primitive types of Data Types which Avro Supports.
+Name some complex types of Data Types which Avro Supports.
+What are best features of Apache Avro?
+Explain some advantages of Avro.
+Explain some disadvantages of Avro.
+What do you mean by schema declaration?
+Explain the term Serialization?
+What do you mean by Schema Resolution?
+Explain the Avro Sasl profile?
+What is the way of creating Avro Schemas?
+Name some Avro Reference Apis?
+When to use Avro?
+Explain sort order in brief?
+What is the advantage of Hadoop Over Java Serialization?
+What are the disadvantages of Hadoop Serialization?
+Table of Contents
+
+Apache Kafka
+Mention what is Apache Kafka?
+Mention what is the traditional method of message transfer?
+Mention what is the benefits of Apache Kafka over the traditional technique?
+Mention what is the meaning of Broker in Kafka?
+Mention what is the Maximum Size of the Message does Kafka server can Receive?
+Explain what is Zookeeper in Kafka and can we use Kafka without Zookeeper?
+Explain how message is consumed by Consumer in Kafka?
+Explain how you can improve the throughput of a remote consumer?
+Explain how you can get Exactly Once Messaging from Kafka during data production?
+Explain how you can reduce churn in Isr and when does Broker leave the Isr?
+Why Replication is required in Kafka?
+What does it indicate if replica stays out of Isr for a long time?
+Mention what happens if the preferred replica is not in the Isr?
+Is it possible to get the Message Offset after Producing?
+Mention what is the difference between Apache Kafka and Apache Storm?
+List the various components in Kafka?
+Explain the role of the Offset?
+[Explain the concept of Leader and Follower?](kafka.md#Explain-the-concept-of Leader-and-Follower)
+How do you define a Partitioning Key?
+In the Producer when does Queuefullexception occur?
+Explain the role of the Kafka Producer Api.
+Table of Contents
+
+Apache Impala
+How do I try Impala out?
+Does Cloudera offer a Vm for demonstrating Impala?
+How much Memory is required?
+What are the main features of Impala?
+What features from relational databases or hive are not available in Impala?
+Does Impala support Generic Jdbc?
+Is Avro supported?
+How do I Know how many Impala Nodes are in my cluster?
+Are results returned as they become available or all at once when a query completes?
+Why does my select statement fail?
+Why does my insert statement fail?
+Does Impala performance improve as it is deployed to more hosts in a cluster in much the same way that Hadoop performance does?
+Is the Hdfs Block Size reduced to achieve faster query results?
+Does Impala use caching?
+What are the good use cases for Impala as opposed to Hive or Mapreduce?
+Is Mapreduce required for impala and will Impala continue to work as expected if Mapreduce is stopped?
+Can Impala be used for complex event processing?
+Is Impala intended to handle Real Time Queries in Low latency Applications or is it for ad-Hoc Queries for the purpose of data exploration?
+How does Impala compare to Hive and Pig?
+Can I do transforms or add New functionality?
+Can any Impala Query also be executed in Hive?
+Can I use Impala to Query data already loaded into Hive and Hbase?
+Is Hive an Impala requirement?
+Is Impala production ready?
+How do I configure Hadoop High Availability for Impala?
+What happens if there is an Error in Impala?
+What is the Maximum number of Rows in a Table?
+On which hosts does Impala run?
+How are Joins performed in Impala?
+How does Impala process Join Queries for large tables?
+What is Impala's aggregation strategy?
+How is Impala Metadata managed?
+What load do concurrent queries produce on the Name Node?
+How does Impala achieve its performance improvements?
+What happens when the data set exceeds available memory?
+What are the most Memory intensive operations?
+When does Impala hold on to or return memory?
+Is there an update statement?
+Can Impala do User defined functions?
+Why do I have to use refresh and invalidate Metadata and what do they do?
+Why is space not freed up when I issue drop table?
+Is there a dual table?
+How do I load a big Csv file into a partitioned table?
+Can I Do Insert ... Select * Into a partitioned table?
+What kinds of Impala Queries or data are best suited for Hbase?
+Table of Contents
+
+Apache Cassandra
+Explain what is Cassandra?
+List the benefits of using Cassandra?
+What is the use of Cassandra and why to use Cassandra?
+Explain the concept of tunable consistency in Cassandra?
+Explain what is composite type in Cassandra?
+How does Cassandra write?
+How Cassandra stores data?
+Define the management tools in Cassandra?
+Mention what are the main components of Cassandra data model?
+Define Memtable?
+Explain what is a Column Family in Cassandra?
+What is SStable and how is it different from other relational tables?
+Explain what is a Cluster in Cassandra?
+Explain the concept of Bloom Filter?
+List out the other components of Cassandra?
+Explain Cap Theorem?
+Explain what is a Keyspace in Cassandra?
+State the differences between Node and Cluster And DataCenter in Cassandra?
+Mention what are the values stored in the Cassandra Column?
+How to write a Query in Cassandra?
+Mention when you can use Alter Keyspace?
+What os Cassandra supports?
+Explain what is Cassandra cqlsh?
+What is Cassandra Data Model?
+Mention what does the Shell Commands capture And consistency determines?
+What is Cql?
+What is mandatory while creating a table in Cassandra?
+Explain the concept of compaction in Cassandra?
+Mention what needs to be taken care while adding a Column?
+Does Cassandra support ACID transactions?
+Explain how Cassandra writes data?
+What is SuperColumn in Cassandra?
+Explain what is Memtable in Cassandra?
+Define the Consistency Levels for Read Operations in Cassandra?
+Explain how Cassandra writes changed data into Commitlog?
+What is difference between Column and Super Column?
+What is ColumnFamily?
+Explain how Cassandra delete data?
+Define the use of Source Command in Cassandra?
+What is Thrift?
+Explain Tombstone in Cassandra?
+What Platforms Cassandra runs on?
+Name the ports Cassandra uses?
+Can you Add Or Remove column families in a working cluster?
+What is Replication Factor in Cassandra?
+Can we change Replication Factor on a Live Cluster?
+How to Iterate all rows in ColumnFamily?
+Explain Cassandra.
+In which language Cassandra is written?
+Which query language is used in Cassandra database?
+What are the benefits and advantages of Cassandra?
+Where Cassandra stores its data?
+What was the design goal of Cassandra?
+How many types of NoSQL databases and give some examples.
+What is keyspace in Cassandra?
+What are the different composite keys in Cassandra?
+What is data replication in Cassandra?
+What is node in Cassandra?
+What do you mean by data center in Cassandra?
+What do you mean by commit log in Cassandra?
+What do you mean by column family in Cassandra?
+What do you mean by consistency in Cassandra?
+How does Cassandra perform write function?
+What is SSTable?
+How the SSTable is different from other relational tables?
+What is the role of ALTER KEYSPACE?
+What are the differences between node and cluster and datacenter in Cassandra?
+What is the use of Cassandra CQL collection?
+What is the use of Bloom Filter in Cassandra?
+How does Cassandra delete data?
+What is SuperColumn in Cassandra?
+What are the Hadoop and HBase and Hive and Cassandra?
+What is the usage of void close() method?
+Which command is used to start the cqlsh prompt?
+What is the usage of cqlsh-version command?
+Does Cassandra work on Windows?
+What is Kundera in Cassandra?
+What do you mean by Thrift in Cassandra?
+What is Hector in Cassandra?
+Table of Contents
+
+Apache Airflow
+What is Airflow?
+What issues does Airflow resolve?
+Explain how workflow is designed in Airflow?
+Explain Airflow Architecture and its components?
+What are the types of Executors in Airflow?
+What are the pros and cons of SequentialExecutor?
+What are the pros and cons of LocalExecutor?
+What are the pros and cons of CeleryExecutor?
+What are the pros and cons of KubernetesExecutor?
+How to define a workflow in Airflow?
+How do you make the module available to airflow if you're using Docker Compose?
+How to schedule DAG in Airflow?
+What is XComs In Airflow?
+What is xcom_pull in XCom Airflow?
+What is Jinja templates?
+How to use Airflow XComs in Jinja templates?
+Table of Contents
+
+DWH Architectures
+What is the Main Difference between View and Materialized View?
+What is Junk Dimension?
+What is Data Warehouse architecture?
+What is an integrity constraints and what are different types of integrity constraints?
+Why is that Data Architect actually monitor and enforce compliance data standards?
+Explain the different data models that are available in detail?
+Differentiate between dimension and attribute?
+Differentiate between Oltp and Olap?
+What is a Real time Data Warehouse and how is it different from near to Real time Data Warehouse?
+What is Type 2 Version Dimension?
+What are Data Modeling and Data Mining?
+Where the Data Cube Technology is used?
+How can you implement many relations in Star Schema Model?
+What is Critical Column?
+What is the main difference between Star and Snowflake Star Schema and which one is better and why?
+What is the difference between Dependent Data Warehouse and Independent Data Warehouse?
+Which technology should be used for interactive Data Querying across multiple dimensions for a decision making for a Dw?
+What is Virtual Data Warehousing?
+What is the difference between Metadata and Data Dictionary?
+What is the difference between Mapping Parameter and Mapping Variable in Data Warehousing?
+Explain the advantages Of Raid 1 and 1/0 And 5 and what type of Raid setup would you put your Tx Logs.
+What are the characteristics of data files?
+What is Rollback Segment?
+What is a Table Space?
+What is Database Link?
+What is a Hash Cluster?
+Describe referential Integrity?
+What is Schema?
+What is Table?
+What is a View?
+What is an Extent?
+What is an Index?
+What is an Integrity Constrains?
+What are Clusters?
+What are the different types of Segments?
+Explain the Relationship among database and Table Space and Data File?
+What is an Index Segment?
+What are the Referential Actions supported by Foreign Key integrity constraint?
+Do you View contain Data?
+What is the use of Control File?
+Can Objects of the same Schema reside in different Table Spaces?
+Can a Table Space hold objects from different Schemes?
+Can a View based on another View?
+What is a full Backup?
+What is Mirrored on line redo Log?
+What is Partial Backup?
+What is Restricted Mode of Instance Startup?
+What are the steps involved in Database Shutdown?
+What are the advantages of Operating a Database in archivelog mode over operating it in no Archivelog Mode?
+What are the different modes of Mounting a Database with the Parallel Server?
+Can Full Backup be performed when the Database is Open?
+What are the steps involved in instance Recovery?
+What are the steps involved in Database Startup?
+Which parameter specified in the Default Storage Clause of create Tablespace cannot be Altered after creating the Table Space?
+What is Online redo Log?
+What is Log Switch?
+What is Dimensional Modelling?
+What are the difference between snow Flake and Star Schema and what are situations where Snow Flake Schema is better than Star Schema to use and when the opposite is True?
+What is a Cube in Data Warehousing concept?
+What are the differences between Star and Snowflake Schema?
+What are Data Marts?
+What is the Data Type of the Surrogate Key?
+What are Fact and Dimension and Measure?
+What are the different Types of Data Warehousing?
+What do you mean by Static and Local Variable?
+What is a Source Qualifier?
+What are the Steps to Build the Data Warehouse?
+What is the advantages Data Mining over Traditional approaches?
+What is the difference between View and Materialized View?
+What is the main difference between Inmon and Kimball Philosophies of Data Warehousing?
+What is Junk Dimension and what is the difference between Junk Dimension and Degenerated Dimension?
+Why Fact Table is in Normal Form?
+What is difference between Er Modeling and Dimensional Modeling?
+What is Conformed Fact?
+What are the Methodologies of Data Warehousing?
+What is Bus Schema?
+What is Data Warehousing Hierarchy?
+What are Data Validation Strategies for Data Mart Validation after loading process?
+What are the Data Types present in Bo and what happens if we implement View in the Designer N Report?
+What is Surrogate Key and where we use it?
+What is a Linked Cube?
+What is meant by Metadata in Context of a Data Warehouse and how it is important?
+What are the possible Data Marts in Retail Sales?
+What are the various Etl Tools in the market?
+What is Dimensional Modeling?
+What is Vldb?
+What is Degenerate Dimension Table?
+What is Er Diagram?
+What is the difference between Snowflake and Star Schema and what are situations where Snowflake Schema is better than Star Schema?
+Can a Dimension Table contain numeric values?
+What is Hybrid Slowly Changing Dimension?
+How many clustered indexes can you create for a table in Dwh and in case Of Truncate and Delete command what happens to table which has unique Id.
+What is Loop in Data Warehousing?
+What is an Error Log Table in Informatica occurs and how to maintain it in mapping?
+What is Drilling Across?
+Where the Cache Files stored?
+What is Dimension Modeling?
+What is Data Cleaning?
+Can you explain the Hierarchies Level Data Warehousing?
+Can you explain about Core Dimension and Balanced Dimension and Dirty Dimension?
+What is Core Dimension?
+After we create a Scd Table can we use that Particular Dimension as a Dimension Table for Star Schema?
+Suppose you are filtering rows using a Filter Transformation and only rows meet the condition pass to the Target so tell me where rows will go that does not meet condition.
+What is Galaxy Schema?
+Briefly state different between Data Ware House and Data Mart?
+What is MetaData?
+What is the Definitions for Datawarehose And Datamart?
+What is Data Validation Strategies for Data Mart validation after Loading Process
+What is Data Mining?
+What is Ods?
+What is Etl?
+Is Oltp Database is design optimal for Data Warehouse?
+If Denormalized is improves Data Warehouse Processes and why Fact Table is in Normal Form?
+What are Lookup Tables?
+What are Aggregate Tables?
+What is real time Datawarehousing?
+What are Conformed Dimensions?
+How do you load the Time Dimension?
+What is a Level of Granularity of a Fact Table?
+What are Non additive facts?
+What is Factless Facts Table?
+Explain about Olap?
+Explain about the Functionality of Olap?
+Explain about Molap?
+Explain about Rolap?
+Explain about Aggregations?
+Explain about the View Selection problem?
+Explain about the role of Bitmap Indexes to solve Aggregation Problems?
+Explain about Encoding Technique used in Bitmaps Indexes?
+Explain about Binning?
+Explain about Hybrid Olap?
+Explain about Shared Features of Olap?
+Explain about Analysis?
+Explain about Multidimensional Features present in Olap?
+Explain about the Database Marketing Application of Olap?
+Compare Data Warehouse Database and Oltp Database.
+What is the difference between Etl Tool and Olap Tool and what are various Etl in the Market?
+Steps in building the Data Model.
+Why is Data Modeling important?
+What Type of Indexing Mechanism do we need use for a typical Datawarehouse?
+What are Semi additive and Factless Facts?
+Is it correct develop a Data Mart using an Ods?
+Explain degenerated dimension.
+What are the different methods of loading Dimension Tables?
+What are Slowly Changing Dimensions?
+What is meant by Metadata in context of a Datawarehouse?
+What are Modeling Tools available in the Market
+What is the main difference between Schema in Rdbms and Schemas in Datawarehouse?
+What is a general purpose Scheduling Tool?
+What is the need of Surrogate Key and why Primary Key not used as Surrogate Key?
+What is Snow Flake Schema?
+What is the difference between Oltp and Olap?
+How are the Dimension Tables designed?
+What are the advantages Data Mining over traditional approaches?
+Which automation tool is used in Data Warehouse testing?
+Give examples of Degenerated Dimensions.
+What is the datatype of the Surrogate Key?
+What is the difference between scan Component and Rollup Component?
+What is M_dump?
+What is Brodcasting and Replicate?
+What is Local and Formal Parameter?
+What is the difference between Dml Expression and Xfr Expression?
+Have you used Rollup Component?
+What are Primary Keys and Foreign Keys?
+What is Outer Join?
+What are Cartesian Joins?
+What is the purpose of having Stored Procedures in a Database?
+Why might you create a Stored Procedure with Recompile Option?
+What is Cursor?
+Describe process steps you would perform when Defragmenting a Data Table and this table contains mission critical Data?
+Explain the difference between Truncate and Delete Commands?
+How would you find out whether Sql Query is using Indices you Expect?
+What are the Security Level used in Bo?
+What are the Functional and Architectural differences between Business Objects and Web Intelligence Reports?
+What is batch processing in Business Objects?
+What is Data Cardinality?
+What is Chained Data Replication?
+Explain in brief various fundamental stages of Data Warehousing.
+What is the difference between Enterprise Data Warehouse and Data Warehouse?
+Give me any example of Semi and Non Additive Measures?
+What are the options in the Target Session of Update Strategy Transformations?
+What are the Various Types of Transformation?
+What is the difference between Active Transformation and Passive Transformation?
+What is the difference between Static Cache and Dynamic Cache?
+How do we join Two tables without Joiner or Sql Override?
+Differences between Normalizer and Normalizer Transformation.
+What is Business Intelligence?
+What is a Universe in Business Intelligence?
+What is Olap in Business Intelligence?
+What are various Modules in Business Objects Product?
+What is Olap Molap Rolap Dolap Holap?
+Why an Infocube has maximum of 16 dimensions?
+Name some standard Business Intelligence Tools in the Market?
+What are Dashboards?
+What is Hierarchy Relationship in a Dimension.
+What are Adhoc reports and Static Reports?
+What is the Importance of Surrogate Key in Data Warehousing?
+What is a Query?
+What are the Features of a Physical Data Model?
+What are the steps to design a Physical Model?
+What are the Features of Conceptual Data Model?
+What are the difference between Logical Data Model and Conceptual Data Model?
+What are the steps to design Logical Data Model?
+What is Etl?
+What is a Three Tier Data Warehouse?
+What is Etl Process and how many steps Etl contains?
+What is Full Load and Incremental or Refresh Load?
+What is a Staging Area?
+Compare Etl and Manual Development.
+What is Rdbms?
+What is Normalization?
+What are different Normalization Forms?
+What is Stored Procedure?
+What is Trigger?
+What is View?
+Advantages of Dbms?
+Disadvantage in File Processing System?
+Describe Three Levels of Data Abstraction?
+Define integrity Rules?
+What is Extension and Intention?
+What is Data Independence?
+What is a View and how it is related to Data Independence?
+What is Data Model?
+What is Object Oriented Model?
+What is an Entity?
+What is an Entity Type?
+What is an Entity Set?
+What is an Attribute?
+What is Relation Schema and Relation?
+What is Degree of Relation?
+What is Relationship?
+What is Relationship Set?
+What is Relationship Type?
+What Is DDL?
+What Is Vdl?
+What is Sdl?
+What Is Data Storage Definition Language?
+What Is Dml?
+What is Query Evaluation Engine?
+What is Ddl Interpreter?
+What is Record at a time?
+What is Set at a time or Set oriented?
+What is Relational Algebra?
+What is Relational Calculus?
+How does Tuple oriented Relational calculus differ from Domain oriented Relational Calculus?
+What is Functional Dependency?
+What is Multivalued Dependency?
+What is Lossless Join Property?
+What Is 1 Nf?
+What is Fully Functional Dependency?
+What is 2nf?
+What is 3nf?
+What is 4nf?
+What is 5nf?
+What is Domain key NF?
+What are Partial Alternate Artificial Compound and Natural Key?
+What is Indexing and what are the different kinds of Indexing?
+What is meant by Query Optimization?
+What is Join Dependency and Inclusion Dependency?
+What is Durability in Dbms?
+What do you mean by Atomicity and Aggregation?
+What is Phantom Deadlock?
+What is Checkpoint and when does it cccur?
+What are different Phases of Transaction?
+What do you mean by Flat File Database?
+What is transparent Dbms?
+What do you mean by Correlated Subquery?
+What are the Primitive Operations common to all record management systems?
+What are Unary Operations in Relational Algebra?
+Are resulting Relations of Product and Join Operation the same?
+What is Rdbms Kernel?
+Name the Sub systems of Rdbms?
+What is Rowid?
+What is Storage Manager?
+What is Buffer Manager?
+What is Transaction Manager?
+What is File Manager?
+What is Authorization and Integrity Manager?
+What are Stand alone procedures?
+What are the different methods of loading dimension tables?
+Describe the foreign key columns in fact tables and dimension tables?
+Table of Contents
+
+Amazon Web Services
+What is EC2?
+What is SnowBall?
+What is CloudWatch?
+What is Elastic Transcoder?
+What do you understand by VPC?
+DNS and Load Balancer Services come under which type of Cloud Service?
+What are the Storage Classes available in Amazon S3?
+Explain what T2 instances are?
+What are Key-Pairs in AWS?
+How many Subnets can you have per VPC?
+List different types of Cloud Services.
+Explain what S3 is?
+How does Amazon Route 53 provide high availability and low latency?
+How can you send a request to Amazon S3?
+What does AMI include?
+What are the different types of Instances?
+What is the relation between the Availability Zone and Region?
+How do you monitor Amazon VPC?
+What are the different types of EC2 instances based on their costs?
+What do you understand by stopping and terminating an EC2 Instance?
+What are the consistency models for modern DBs offered by AWS?
+What is Geo-Targeting in CloudFront?
+What are the advantages of AWS IAM?
+What do you understand by a Security Group?
+What are Spot Instances and On-Demand Instances?
+Explain Connection Draining.
+What is a Stateful and a Stateless Firewall?
+What is a Power User Access in AWS?
+What is an Instance Store Volume and an EBS Volume?
+What are Recovery Time Objective and Recovery Point Objective in AWS?
+Is there a way to upload a file that is greater than 100 Megabytes in Amazon S3?
+Can you change the Private IP Address of an EC2 instance while it is running or in a stopped state?
+What is the use of lifecycle hooks is Autoscaling?
+What are the policies that you can set for your userвЂ™s passwords?
+What do tou know about the Amazon Database?
+Explain Amazon Relational Database?
+What are the Features of Amazon Database?
+Which of the Aws Db Service is a Nosql Database and Serverless and Delivers Consistent singledigit Millisecond Latency at any scale?
+What is Key Value Store?
+What is Dynamodb?
+List of the benefits of using Amazon Dynamodb?
+What is a Dynamodbmapper Class?
+What are the Data Types supported by Dynamodb?
+What do you understand by Dynamodb Auto Scaling?
+What is a Data Warehouse and how Aws Redshift can play a vital role in the Storage?
+What is Amazon Redshift and why is it popular among other Cloud Data Warehouses?
+What is Redshift Spectrum?
+What is a Leader Node and Compute Node?
+How to load data iIn Amazon Redshift?
+Mention the database engines which are supported by Amazon Rds?
+What is the work of Amazon Rds?
+What is the purpose of standby Rds Instance?
+Are Rds instances upgradable or down gradable according to the Need?
+What is Amazon Elastic Ache?
+What is the use of Amazon Elastic Ache?
+What are the Benefits of Amazon Elastic Ache?
+Explain the Types of Engines in Elastic Ache?
+Is it possible to run Multiple Db Instances for free for Amazon Rds?
+Which Aws Services will you choose for collecting and processing Ecommerce Data for Realtime Analysis?
+What will happen to the Db Snapshots and Backups if any user deletes Db Instance?
+Table of Contents
+
+Google Cloud Platform
+What is Google BigQuery
+How does GCP handle data redundancy and backup
+What is the purpose of Cloud Composer in GCP
+How does GCP store data
+What is the purpose of Cloud Machine Learning Engine in GCP
+What is Cloud SQL and how is it used in GCP
+Explain the use of Cloud CDN (Content Delivery Network) in GCP
+How can you securely transfer data to and from GCP
+Explain the role of Cloud Storage in GCP
+What is the purpose of Cloud Monitoring in GCP
+What is the purpose of Cloud NAT in GCP
+How can you manage data access and permissions in GCP
+How can you monitor and analyze GCP costs
+What is Google Cloud Platform (GCP)
+How does GCP ensure compliance and data privacy
+Explain the use of Cloud Datastore in GCP
+What is the purpose of Cloud Security Scanner in GCP
+How does GCP handle data encryption
+Explain the use of Cloud VPN in GCP
+Explain the use of Cloud Dataflow in GCP
+How can you optimize data ingestion in GCP
+How can you monitor and troubleshoot performance issues in GCP
+What is the purpose of Cloud DNS in GCP
+What are the key components of GCP
+How can you ensure high availability and fault tolerance in GCP
+How can you ensure data integrity in GCP
+What are the advantages of using GCP for data engineering
+What is Cloud Dataproc
+What is Memorystore in GCP
+Explain the use of Cloud Security Command Center in GCP
+How can you monitor and analyze GCP resources and services
+Explain the use of Cloud Key Management Service (KMS) in GCP
+What is Cloud Pub/Sub
+What is the purpose of Cloud SQL Proxy in GCP
+Explain the concept of VPC (Virtual Private Cloud) in GCP
+Explain the use of Cloud Machine Learning Engine in GCP
+How does GCP handle data replication and synchronization
+How does GCP handle disaster recovery
+What is the purpose of Cloud Functions in GCP
+Explain the concept of dataflow in GCP
+What is the purpose of Cloud Load Balancing in GCP
+How does GCP ensure data security
+Explain the use of Cloud IoT Core in GCP
+Explain the use of Cloud Composer in GCP
+What is the purpose of Cloud Deployment Manager in GCP
+Explain the use of Cloud Run in GCP
+What is Cloud Spanner in GCP
+How does GCP handle data archiving and long-term storage
+Explain the use of Cloud Datalab in GCP
+What is Cloud Composer in GCP
+Explain the use of Cloud AutoML in GCP
+What is Cloud Memorystore for Redis in GCP
+What is the purpose of Cloud Identity and Access Management (IAM) in GCP
+How can you optimize data processing in GCP
+How can you move data into GCP for analysis
+Table of Contents
+
+Bigquery
+What is the purpose of BigQuery ML's CREATE MODEL statement
+What is clustering, and how does it optimize query performance
+How can you export BigQuery query results to a file
+How does BigQuery handle data privacy and security
+What is the purpose of the INFORMATION_SCHEMA in BigQuery
+Can you explain the concept of wildcard tables in BigQuery
+What is the difference between BigQuery and traditional relational databases
+What are the benefits of using partitioned tables in BigQuery
+Can you explain the concept of BigQuery's workload management
+What are the limitations of using BigQuery streaming inserts
+Can you explain the concept of slot reservations in BigQuery
+How does BigQuery handle data skew and hotspots in queries
+Can you explain the concept of streaming buffer in BigQuery
+What are the different data export options in BigQuery
+What is the purpose of the BigQuery ML service
+How can you monitor and optimize BigQuery costs
+What is the purpose of the BigQuery Storage API
+How does BigQuery handle nested data types like arrays and structs
+How do you load data into BigQuery
+What are the limitations or constraints of using BigQuery
+What is the purpose of the BigQuery Data Transfer Service for SaaS
+What is the purpose of the BigQuery ML EVALUATE statement
+How can you monitor and troubleshoot query performance in BigQuery
+Explain the concept of federated queries in BigQuery
+How does BigQuery handle data backup and recovery
+How does BigQuery handle data encryption
+How does BigQuery handle schema changes for large tables
+How can you control access and permissions in BigQuery
+What is the role of service accounts in BigQuery
+Explain the concept of partitioning in BigQuery
+What is the purpose of BigQuery reservations
+Can you explain the concept of clustering keys in BigQuery
+What is the purpose of BigQuery BI Engine
+How does BigQuery handle data export to external services
+Can you explain the concept of BigQuery's query cache
+Can you explain the concept of BigQuery Omni
+What is the purpose of the BigQuery Data QnA service
+What is BigQuery, and how does it fit into the data engineering ecosystem
+How does BigQuery handle data consistency in distributed queries
+How does BigQuery handle data ingestion from streaming sources
+Explain the concept of nested and repeated fields in BigQuery
+How does BigQuery handle data partitioning and clustering
+What are the key advantages of using BigQuery
+How does BigQuery handle nested and repeated fields in JSON data
+What are the different types of pricing models available for BigQuery
+Explain the difference between BigQuery slots and slots reservation
+Can you explain the concept of BigQuery's billing export
+Can you share your experience with implementing data pipelines in BigQuery
+What is the difference between a table decorator and a snapshot decorator in BigQuery
+How can you automate BigQuery tasks using Cloud Functions
+Can you explain the concept of streaming inserts in BigQuery
+How does BigQuery handle data storage and processing
+What is the difference between a view and a materialized view in BigQuery
+How can you handle schema evolution in BigQuery
+How does BigQuery handle query optimization and query execution
+How can you monitor and troubleshoot streaming data pipelines in BigQuery
+Can you explain the concept of table clustering and its benefits
+Can you explain the concept of BigQuery federated queries
+How does BigQuery handle data security
+Can you explain the concept of materialized views in BigQuery
+Can you explain the concept of time travel in BigQuery
+Can you explain the concept of slots in BigQuery
+What are the best practices for optimizing query performance in BigQuery
+Can you explain the concept of geographic data types in BigQuery
+Can you explain the concept of the BigQuery Data Catalog
+Can you explain the concept of data sharding in BigQuery
+What is the purpose of the BigQuery ML TRANSFORM statement
+How does BigQuery handle data deduplication during batch loading
+How can you optimize data storage costs in BigQuery
+Can you explain the concept of data lineage in BigQuery
+What are the best practices for data modeling in BigQuery
+How can you optimize query performance in BigQuery
+How can you schedule and automate jobs in BigQuery
+Can you explain the concept of query caching in BigQuery
+How does BigQuery handle data deduplication
+What is the difference between a table and a view in BigQuery
+What is the role of BigQuery Data Transfer Service
+What are the different data ingestion options in BigQuery
+What is the purpose of the BigQuery Data Transfer Service
+How can you automate BigQuery tasks using Cloud Composer
+Table of Contents
+
+Bigtable
+What is the role of the Bigtable client library
+What is the role of the Bigtable master server
+Can you explain the role of Bigtable's client-side buffering and batching in optimizing write operations
+Does Bigtable provide support for complex data types like arrays or JSON
+How does Bigtable handle schema evolution
+What is the impact of schema design on Bigtable performance
+Can you explain how Bigtable handles high availability and seamless failover
+How does Bigtable handle data replication across regions
+How does Bigtable handle storage growth over time
+How does Big table handle data sharding and distribution
+How does Bigtable handle schema changes
+How does Bigtable handle access control for different types of operations, such as read, write, or delete
+What are some typical use cases for Bigtable
+Can you explain how Bigtable handles access control for different levels of data granularity
+How does Bigtable handle backups and disaster recovery
+What are the considerations for choosing between Bigtable and other databases like Cassandra or MongoDB
+Can you explain how Bigtable handles data compression and decompression
+How does Bigtable support structured data
+What consistency model does Bigtable provide
+Does Bigtable support full-text search capabilities
+How does Bigtable ensure high performance
+Does Bigtable support integration with popular data processing frameworks like Apache Spark or Apache Beam
+Does Bigtable support integration with machine learning frameworks like TensorFlow or PyTorch
+How does Bigtable achieve scalability
+Can you explain how Bigtable handles data encryption
+Can you explain the difference between Bigtable and HBase
+Does Bigtable provide automatic indexing for faster querying
+Can you explain the concept of Bigtable's compaction and memtable
+How does Bigtable handle access control for data in transit
+What are the advantages of using Bigtable over traditional relational databases
+How does Bigtable handle data durability and fault tolerance
+Can you explain how Bigtable handles data replication across regions in terms of consistency and latency
+How does Bigtable handle data locality in a multi-region setup
+What is a tablet in Bigtable
+Does Bigtable provide automatic indexing for efficient querying
+Can you explain how Bigtable handles data access control for multi-tenant environments
+How does Bigtable handle data consistency across replicas
+How does Bigtable handle hotspots
+How does Bigtable handle backup and restore operations
+How does Bigtable handle access control and security
+Can you explain the role of Bigtable's tablet placement policy
+What is Bigtable
+Does Bigtable support change data capture (CDC) for real-time data integration
+Can you explain the role of Bigtable's compression algorithm, Snappy
+Can you explain the role of a Bloom filter in Bigtable
+Does Bigtable support integration with popular ETL (Extract, Transform, Load) tools
+Does Bigtable support automatic data partitioning
+Does Bigtable support secondary indexes
+Does Bigtable support ACID transactions
+How does Bigtable handle time-based data, such as event logs
+Can you explain how Bigtable handles data versioning
+Does Bigtable provide support for aggregations and analytics
+How can you interact with Bigtable
+Does Bigtable support time travel queries with fine-grained control over historical data retrieval
+How does Bigtable handle schema changes without downtime
+How does Bigtable handle concurrent access to the same row
+Can you describe the data model used in Bigtable
+Does Bigtable provide integration with popular business intelligence tools
+Can you explain how Bigtable handles large-scale data migration
+Can you explain how Bigtable handles data partitioning and load balancing
+How does Bigtable handle concurrent updates to the same cell from multiple clients
+Does Bigtable support automatic scaling of storage and compute resources
+Does Bigtable support automatic query optimization
+How does Bigtable handle load balancing
+Can you explain how Big table handles data access control on a per-row basis
+How does Bigtable handle compaction
+How does Bigtable handle data compression
+How does Bigtable handle data distribution across different availability zones within a region
+Does Bigtable provide data snapshot capabilities
+Does Bigtable support full-text search capabilities through integrations
+How does Bigtable handle data storage
+What are the key features of Bigtable
+What is the role of Bigtable's memstore
+Can you explain how Bigtable handles schema evolution for existing data
+Can you explain how Bigtable handles garbage collection of older versions of data
+Can you explain the role of Bigtable's compaction strategy in performance optimization
+How does Bigtable handle data access from different regions
+Can you explain how Bigtable handles storage and retrieval of large objects
+Does Bigtable support data replication within a single region
+Can you explain how Bigtable manages garbage collection
+How does Bigtable handle data locality
+Does Bigtable provide automatic data expiration
+How does Bigtable handle data consistency in a multi-region setup
+Can you explain the role of Bigtable's read-modify-write operation
+Can you explain the role of a tablet server in Bigtable
+Can you explain the role of Bigtable's bloom block filter in read operations
+Can you explain the role of Bigtable's mutation operations in write operations
+How does Bigtable handle data replication and failover in a multi-region setup with data consistency requirements
+How does Bigtable handle concurrent read and write requests
+What is the recommended way to perform atomic row-level updates in Bigtable
+Can you explain the role of Bigtable's Bloom filter in read operations
+Can you explain how Bigtable handles range scans and filters
+How does Bigtable handle data replication
+Can you explain how Bigtable handles write amplification
+What is the maximum size of a row in Bigtable
+Can you explain the concept of tablet splitting in Bigtable
+How does Bigtable handle time-travel queries
+How does Bigtable handle row-level and column-level access control
+Can you explain the architecture of Bigtable
+How does Bigtable ensure fault tolerance
+Table of Contents
+
+Apache Spark
+What are the main features of Apache Spark?
+What is a Resilient Distribution Dataset in Apache Spark?
+What is a Transformation in Apache Spark?
+What are security options in Apache Spark?
+How will you monitor Apache Spark?
+What are the main libraries of Apache Spark?
+What are the main functions of Spark Core in Apache Spark?
+How will you do memory tuning in Spark?
+What are the two ways to create RDD in Spark?
+What are the main operations that can be done on a RDD in Apache Spark?
+What are the common Transformations in Apache Spark?
+What are the common Actions in Apache Spark?
+What is a Shuffle operation in Spark?
+What are the operations that can cause a shuffle in Spark?
+What is purpose of Spark SQL?
+What is a DataFrame in Spark SQL?
+What is a Parquet file in Spark?
+What is the difference between Apache Spark and Apache Hadoop MapReduce?
+What are the main languages supported by Apache Spark?
+What are the file systems supported by Spark?
+What is a Spark Driver?
+What is an RDD Lineage?
+What are the two main types of Vector in Spark?
+What are the different deployment modes of Apache Spark?
+What is lazy evaluation in Apache Spark?
+What are the core components of a distributed application in Apache Spark?
+What is the difference in cache() and persist() methods in Apache Spark?
+How will you remove data from cache in Apache Spark?
+What is the use of SparkContext in Apache Spark?
+Do we need HDFS for running Spark application?
+What is Spark Streaming?
+How does Spark Streaming work internally?
+What is a Pipeline in Apache Spark?
+How does Pipeline work in Apache Spark?
+What is the difference between Transformer and Estimator in Apache Spark?
+What are the different types of Cluster Managers in Apache Spark?
+How will you minimize data transfer while working with Apache Spark?
+What is the main use of MLib in Apache Spark?
+What is the Checkpointing in Apache Spark?
+What is an Accumulator in Apache Spark?
+What is a Broadcast variable in Apache Spark?
+What is Structured Streaming in Apache Spark?
+How will you pass functions to Apache Spark?
+What is a Property Graph?
+What is Neighborhood Aggregation in Spark?
+What are different Persistence levels in Apache Spark?
+How will you select the storage level in Apache Spark?
+What are the options in Spark to create a Graph?
+What are the basic Graph operators in Spark?
+What is the partitioning approach used in GraphX of Apache Spark?
+What is RDD?
+Name the different types of RDD
+What are the methods of creating RDDs in Spark?
+What is a Sparse Vector?
+What are the languages supported by Apache Spark and which is the most popular one, What is JDBC and why it is popular?
+What is Yarn?
+Do you need to install Spark on all nodes of Yarn cluster? Why?
+Is it possible to run Apache Spark on Apache Mesos?
+What is lineage graph?
+Define Partitions in Apache Spark
+What is a DStream?
+What is a Catalyst framework?
+What are Actions in Spark?
+What is a Parquet file?
+What is GraphX?
+What file systems does Spark support?
+What are the different types of transformations on DStreams? Explain.
+What is the difference between persist () and cache ()?
+What do you understand by SchemaRDD?
+What is Apache Spark?
+Explain key features of Spark.
+Define RDD?
+What does a Spark Engine do?
+Define Partitions?
+What do you understand by Transformations in Spark?
+Define Actions.
+Define functions of SparkCore?
+What is RDD Lineage?
+What is Spark Driver?
+What is Hive on Spark?
+Define Spark Streaming.
+What is Spark SQL?
+List the functions of Spark SQL?
+What are benefits of Spark over MapReduce?
+What is Spark Executor?
+What do you understand by worker node?
+Illustrate some demerits of using Spark.
+What is the advantage of a Parquet file?
+What are different o/p methods to get result?
+What are two ways to attain a schema from data?
+Why should you define your own schema?
+Why is JSON a common format in big data pipelines?
+By default, how are corrupt records dealt with using spark.read.json()?
+Explain the key features of Apache Spark.
+What are benefits of Spark over MapReduce?
+What is YARN?
+Do you need to install Spark on all nodes of YARN cluster?
+Is there any benefit of learning MapReduce if Spark is better than MapReduce?
+Explain the concept of Resilient Distributed Dataset (RDD).
+How do we create RDDs in Spark?
+What is Executor Memory in a Spark application?
+Define Partitions in Apache Spark.
+What operations does RDD support?
+What do you understand by Transformations in Spark?
+Define Actions in Spark.
+Define functions of SparkCore.
+Memory management and fault recovery
+What do you understand by Pair RDD?
+How is Streaming implemented in Spark? Explain with examples.
+Is there an API for implementing graphs in Spark?
+What is PageRank in GraphX?
+How is machine learning implemented in Spark?
+Is there a module to implement SQL in Spark? How does it work?
+What are receivers in Apache Spark Streaming?
+What do you understand by Shuffling in Spark?
+How is Apache Spark different from MapReduce?
+Explain the working of Spark with the help of its architecture.
+What is the working of DAG in Spark?
+Under what scenarios do you use Client and Cluster modes for deployment?
+What is Spark Streaming and how is it implemented in Spark?
+What can you say about Spark Datasets?
+Define Spark DataFrames.
+Define Executor Memory in Spark
+What are the functions of SparkCore?
+What do you understand by worker node?
+What are some demerits of using Spark in applications?
+How can the data transfers be minimized while working with Spark?
+What is SchemaRDD in Spark RDD?
+What module is used for implementing SQL in Apache Spark?
+What are the steps to calculate the executor memory?
+Why do we need broadcast variables in Spark?
+Can Apache Spark be used along with Hadoop? If yes, then how?
+What are Sparse Vectors? How are they different from dense vectors?
+How are automatic clean-ups triggered in Spark for handling the accumulated metadata?
+How is Caching relevant in Spark Streaming?
+Define Piping in Spark.
+What API is used for Graph Implementation in Spark?
+How can you achieve machine learning in Spark?
+What are the limitations of Spark?
+Compare Hadoop and Spark.
+What is lazy evaluation in Spark?
+What are the benefits of lazy evaluation?
+What do you mean by Persistence?
+Explain the run time architecture of Spark?
+What is the difference between DSM and RDD?
+How can data transfer be minimized when working with Apache Spark?
+How does Apache Spark handles accumulated Metadata?
+What are the common faults of the developer while using Apache Spark?
+Which among the two is preferable for the project- Hadoop MapReduce or Apache Spark?
+List the popular use cases of Apache Spark.
+What is Spark.executor.memory in a Spark Application?
+What is DataFrames?
+What are the advantages of DataFrame?
+What is DataSet?
+What are the advantages of DataSets?
+Explain Catalyst framework.
+What is DStream?
+Explain different transformation on DStream.
+What is written ahead log or journaling?
+Explain first operation in Apache Spark RDD.
+Describe join operation. How is outer join supported?
+Describe coalesce operation. When can you coalesce to a larger number of partitions? Explain.
+Describe Partition and Partitioner in Apache Spark.
+How can you manually partition the RDD?
+Explain API create Or Replace TempView.
+What are the various advantages of DataFrame over RDD in Apache Spark?
+What is a DataSet and what are its advantages over DataFrame and RDD?
+On what all basis can you differentiate RDD and DataFrame and DataSet?
+Explain the level of parallelism in Spark Streaming.
+Discuss writeahead logging in Apache Spark Streaming.
+What do you mean by Speculative execution in Apache Spark?
+How do you parse data in XML? Which kind of class do you use with java to pass data?
+Explain Machine Learning library in Spark.
+List various commonly used Machine Learning Algorithm.
+Explain the Parquet File format in Apache Spark. When is it the best to choose this?
+What is Lineage Graph?
+How can you Trigger Automatic Cleanups in Spark to Handle Accumulated Metadata?
+What are the benefits of using Spark With Apache Mesos?
+What is the Significance of Sliding Window Operation?
+When running Spark Applications is it necessary to install Spark on all Nodes of Yarn Cluster?
+What is Catalyst Framework?
+Which Spark Library allows reliable File Sharing at Memory Speed across different cluster frameworks?
+Why is Blinkdb used?
+How can you compare Hadoop and Spark in terms of ease of use?
+What are the common mistakes developers make when running Spark Applications?
+What is the Advantage of a Parquet File?
+What are the various Data Sources available in Sparksql?
+What are the Key Features of Apache Spark that you like?
+What do you understand by Pair Rdd?
+Explain about different Types of Transformations on Dstreams?
+Explain about popular use cases of Apache Spark?
+Is Apache Spark a good fit for reinforcement Learning?
+What is Spark Core?
+How can you remove the elements with a Key present in any other Rdd?
+What is the difference between Persist and Cache?
+How Spark handles Monitoring and Logging in Standalone Mode?
+Does Apache Spark provide check pointing?
+How can you launch Spark Jobs inside Hadoop Mapreduce?
+How can you achieve High Availability in Apache Spark?
+Hadoop uses Replication to achieve Fault Tolerance and how is this achieved in Apache Spark?
+Explain about Core Components of a distributed Spark Application?
+What do you understand by Lazy Evaluation?
+Define a Worker Node?
+What do you understand by Schemardd?
+What are the disadvantages of using Apache Spark over Hadoop Mapreduce?
+Is it necessary to install Spark on all Nodes of Yarn Cluster while running Apache Spark on Yarn?
+What do you understand by Executor Memory in Spark Application?
+What does the Spark Engine do?
+What makes Apache Spark good at Low latency Workloads like Graph Processing and Machine Learning?
+What is Dstream in Apache Spark?
+What do you understand by YARN?
+Is it necessary to install Spark on all nodes of the YARN cluster?
+What are the different data sources available in SparkSQL?
+Which are some important internal daemons used in Apache Spark?
+What is the method to create a Data frame in Apache Spark?
+What do you understand by accumulators in Apache Spark?
+What is the default level of parallelism in Apache Spark?
+Which companies are using Spark streaming services?
+Is it possible to use Spark to access and analyze data stored in Cassandra databases?
+Can we run Apache Spark on Apache Mesos?
+What do you understand by Spark SQL?
+How can you connect Spark to Apache Mesos?
+What is the best way to minimize data transfers when working with Spark?
+What do you understand by lazy evaluation in Apache Spark?
+What do you understand by Spark Driver?
+What is the Parquet file in Apache Spark?
+What is the way to store the data in Apache Spark?
+How is it possible to implement machine learning in Apache Spark?
+What are some disadvantages or demerits of using Apache Spark?
+What is the use of File system API in Apache Spark?
+What are the tasks of a Spark Engine?
+What is the use of Apache SparkContext?
+Is it possible to do real-time processing with SparkSQL?
+What is the use of Akka in Apache Spark?
+What do you understand by Spark map() Transformation?
+What is the advantage of using the Parquet file?
+What is the difference between persist() and cache() functions in Apache Spark?
+Which Spark libraries allow reliable file sharing at memory speed across different cluster frameworks?
+What is shuffling in Apache Spark? When does it occur?
+What is the lineage in Spark?
+How can you trigger automatic clean-ups in Spark to handle accumulated metadata?
+Is it possible to launch Spark jobs inside Hadoop MapReduce?
+What is the use of BlinkDB in Spark?
+Table of Contents
+
+Apache Flink
+See you using Flink, briefly introduce Flink?
+What are the differences between Flink and Spark Streaming?
+What are the Flink component stacks
+Does Flink need to depend on Hadoop?
+How big is your FLink cluster?
+What is the Flink programming model?
+What are the roles of Flink cluster? What are the functions?
+What is TaskSolt?
+What are the commonly used operators in Flink?
+What is the parallelism of Flink and What is the parallelism setting of Flink?
+What is the relationship between Flink's Solt and parallelism?
+What if Flink encounters an abnormal restart of the program?
+Flink's distributed cache
+Broadcast variables in Flink
+Do you know what windows in Flink are?
+Flink's state storage?
+What kind of time are there in Flink?
+What is Watermark in Flink?
+What is Unbounded streams in Apache Flink?
+Apache Flink Job Execution Architecture
+What is Bounded streams in Apache Flink?
+What is Dataset API in Apache Flink?
+What is DataStream API in Apache Flink?
+What is Apache Flink Table API?
+What is Apache Flink FlinkML?
+What is Apache Flink?
+Explain Apache Flink Architecture?
+Explain the Apache Flink Job Execution Architecture?
+What are the features of Apache Flink?
+What is Storage and Streaming in Apache Flink?
+What is DataSet API?
+What are the DSL Tool's in Flink?
+What are the Apache Flink domain-specific libraries?
+What is the programing model of Apache Flink?
+What are the different types of tools supported by Apache Flink?
+Can we consider Apache Flink as an alternative to Hadoop? if so then explain why?
+What are the use cases of Apache Flink?
+What are the different ways to use Apache Flink?
+What is the different component stack of Apache Flink?
+What is the command to start Apache Flink Cluster?
+What is the Apache Flink SQL client and how to start it?
+What are the SQL statements supported in Apache Flink?
+What is bounded and unbounded data in Apache Flink?
+What is the building block of Apache Flink streaming applications?
+What are the most common types of applications that use the Apache Flink?
+What are the features of the Apache Flink execution Engine?
+What is Apache FlinkML?
+How can I check the progress of an Apache Flink Program?
+How Apache Flink handles the fault-tolerance?
+How to run an Apache Flink program using CLI mode?
+What is the responsibility of JobManager in Apache Flink Cluster?
+What is the responsibility of TaskManager in Apache Flink Cluster?
+What is the filesystem supported by Apache Flink?
+What is the difference between stream processing and batch processing?
+What can I do with my state?
+Flink watermark Transmission mechanism.
+Flink The time semantics of?
+Flink window join:
+Flink What are the window functions:
+keyedProcessFunction How it works
+How to deal with offline data such as the association with offline data?
+What if there is a data skew?
+How to do dimension table Association?
+Flink checkpoint The overtime problem of How to solve?
+FlinkTopN And offline TopN The difference between?
+Sparkstreaming and flink in checkpoint?
+A brief introduction cep State programming:
+How to deal with abnormal data in Flink.
+Is there any possibility of data loss in Flink?
+At the time of submission How to make parallelism and how to allocate resources?
+What's the common stream of API?
+How to maintain Checkpoint?
+What's the difference at Spark and Flink Serialization?
+How to deal with late data?
+When to use aggregate perhaps process:
+Table of Contents
+
+Microsoft Azure
+What are the three Main Components of Windows Azure Platform?
+What are the Service Model in Cloud Computing?
+How many Types of Deployment Models are used in Cloud?
+What is Windows Azure Platform?
+What are the Roles Available in Windows Azure?
+What is difference between Windows Azure Platform and Windows Azure?
+What are the three Types of Roles in Compute Component in Windows Azure?
+What is Windows Azure Compute Emulator?
+What is Fabric?
+How many instances of a Role should be deployed to Satisfy Azure Sla?
+What are the options to manage Session State in Windows Azure?
+What is Cspack?
+What is Csrun?
+What is Guest Os?
+How to programmatically Scale Out Azure Worker Role Instances?
+What is Web Role in Windows Azure?
+What is the difference between Public Cloud and Private Cloud?
+What is Windows Azure Diagnostics?
+What is Blob?
+What is the difference between Block Blob Vs Page Blob?
+What is the difference between Windows Azure Queues and Windows Azure Service Bus Queues?
+What is Deadletter Queue?
+What are Instance Sizes of Azure?
+What is Table Storage in Windows Azure?
+Difference between Web and Worker Roles in Windows Azure?
+What is Azure Fabric Controller?
+What is Autoscaling?
+What is Vm Role in Windows Azure?
+Apart from dotnet Framework please name other three language framework that can be used to Develop Windows Azure Applications?
+How would you categorize Windows Azure?
+What is Azure Cloud Service?
+What is Cloud Service Role?
+What is Link Resource?
+What is Scale Cloud Service?
+What is Web Role ?
+What is Worker Role ?
+What is Role Instance ?
+What is Guest Operating System ?
+What is Cloud Service Components?
+What is Deployment Environments?
+What is Swap Deployments?
+What is Minimal Vs Verbose Monitoring?
+What is Service Definition File?
+What is Service Configuration File?
+What is Service Package ?
+What is Cloud Service Deployment ?
+What is Azure Diagnostics ?
+What is Azure Service Level Agreement?
+Table of Contents
+
+Tableau
+What is data visualization in Tableau?
+What is the difference between various BI tools and Tableau?
+What are different Tableau products?
+What is a parameter in Tableau?
+Tell me something about measures and dimensions?
+What are continuous and discrete field types?
+What is aggregation and disaggregation of data?
+What are the different types of joins in Tableau?
+Tell me the different connections to make with a dataset?
+What are the supported file extensions in Tableau?
+What are the supported data types in Tableau?
+What are sets?
+What are groups in Tableau?
+What are shelves?
+Tell me something about Data blending in Tableau?
+How do you generally perform load testing in Tableau?
+Why would someone not use Tableau?
+What is Tableau data engine?
+What are the various types of filters in Tableau?
+What are dual axes?
+What is the difference between a tree and heat map?
+What are extracts and schedules in Tableau server?
+What are the components in a dashboard?
+What is a TDE file?
+What is the story in Tableau?
+What are different Tableau files?
+How do you embed views into webpages?
+What is the maximum num of rows Tableau can utilize at one time?
+Mention what is the difference between published data sources and embedded data sources in Tableau?
+What is the DRIVE Program Methodology?
+How to use groups in a calculated field?
+Explain when would you use Joins vs Blending in Tableau?
+What is Assume referential integrity?
+What is a Calculated Field and How Will You Create One?
+How Can You Display the Top Five and Bottom Five Sales in the Same View?
+What is the Rank Function in Tableau?
+What is the difference between Tableau and other similar tools like QlikView or IBM Cognos?
+Table of Contents
+
+Apache Hive
+How will you improve the performance of a program in Hive?
+Can we use Hive for Online Transaction Processing (OLTP) systems?
+How will you change the data type of a column in Hive?
+What is Metastore in Hive?
+What is SerDe in Hive?
+What are the components in Hive data model?
+What are the different modes in which we can run Hive?
+What are the main components of Hive?
+What is the use of Hive in Hadoop ecosystem?
+What Collection Complex data types are supported by Hive?
+What is the use of .hiverc file in Hive?
+How will you run Unix commands from Hive?
+What is the purpose of USE command in Hive?
+What is the precedence order in Hive configuration?
+How will you display header row with the results of a Hive query?
+Can we create multiple tables in Hive for a data file?
+How does CONCAT function work in Hive?
+How will you change settings of a Hive session?
+How will you rename a table in Hive without using ALTER command?
+What is the difference between SORT BY and ORDER BY in Hive?
+What is the use of strict mode in Hive?
+What is the use of IF EXISTS clause in Hive statements?
+What is the use of PURGE in DROP statement of Hive?
+What are the main limitations of Apache Hive?
+What is the difference between HBase and Hive?
+What is ObjectInspector in Hive?
+What are the main components of Query Processor in Apache Hive?
+How will you resolve an out of memory error while running a JOIN query?
+What are the different SerDe implementations in Hive?
+What is the use of HCatalog?
+What is the Data Model of HCatalog?
+What is RLIKE operator in Hive?
+Can we use same name for a TABLE and VIEW in Hive?
+How will you load data into a VIEW in Hive?
+What is Bucketing in Hive?
+What are the pros and cons of archiving a partition in Hive?
+How can we specify in Hive to load an HDFS file in LOAD DATA?
+What is a Skewed table in Hive?
+What is the use of CLUSTERED BY clause during table creation in Hive?
+What is a Managed table in Hive?
+How will you prevent data to be dropped or queried from a partition in Hive?
+What is the use of TOUCH in ALTER statement?
+How does OVERWRITE clause work in CREATE TABLE statement in Hive?
+What are the options to connect an application to a Hive server?
+How TRIM and RPAD functions work in Hive?
+How will you recursively access sub-directories in Hive?
+What is the optimization that can be done in SELECT * query in Hive?
+What is the use of ORC format tables in Hive?
+What are the main use cases for using Hive?
+What are the different Types of Tables available in Hive?
+Is Hive suitable to be used for Oltp systems?
+Can Table be Renamed in Hive?
+Can we change Data Type of column in Hive Table?
+What is Metastore in Hive?
+What is the need for Custom Serde?
+Why do we need Hive?
+What is the Default Location where Hive stores Table Data?
+What are the Three Different Modes in which Hive can be run?
+Is there a Date Data Type in Hive?
+What are Collection Data Types in Hive?
+Can we run Unix Shell Commands from Hive?
+What is Hive Variable?
+Can Hive Queries be executed from Script Files?
+What is the Importance of .hiverc file?
+What are the default Record and Field Delimiter used for Hive Text Files?
+What do you mean by Schema on Read?
+How do you find list all Databases whose name starts with P?
+What does the use command in Hive do?
+How can you Delete Dbproperty in Hive?
+What is the Significance of the Line Set Hive.mapred.mode = Strict.
+How do you check if a Particular Partition Exists?
+Which Java Class handles the Input Record Encoding into files which store Tables in Hive?
+Which Java Class handles the Output Record Encoding into files which result from Hive Queries?
+What is the significance of if Exists clause while dropping Table?
+When you point a Partition of Hive Table to New Directory so what happens with Data?
+Write Query to Insert New Column new_col Int into Hive Table at a position before an existing Column x_col.
+Does Archiving of Hive Tables give any space saving in Hdfs?
+How can you Stop Partition form being queried?
+While loading Data into Hive Table using Load Data Clause so how do you specify it is a Hdfs File and not a Local File?
+If you omit Overwrite clause while creating Hive Table so what happens with File which are new and files which already exist?
+What is a Table Generating Function on Hive?
+How can Hive avoid Mapreduce?
+What is the difference between Like and Rlike operators in Hive?
+Is it possible to create Cartesian Join between 2 Tables using Hive?
+As part of optimizing Queries in Hive what should be the Order of Table Size in Join Query?
+What is the Usefulness of the Distributed by clause in Hive?
+Can Name of a View be Same as Name of a Hive Table?
+Can we load Data into View?
+What types of Costs are associated in creating Index in Hive Tables?
+What is Bucketing?
+What does streamtable do?
+Can Partition be Archived?
+What is Generic Udf in Hive?
+How do you specify Table Creator Name when creating Table in Hive?
+Table of Contents
+
+Apache Hbase
+What are the differences between RDBMS and HBase data model?
+Explain what is Hbase?
+Explain why to use Hbase?
+Mention what are the key components of Hbase?
+Explain what does Hbase consists of?
+Mention how many operational commands in Hbase?
+Explain what is WAL and Hlog in Hbase?
+When you should use Hbase?
+In Hbase what is column families?
+Explain what is the row key?
+Explain deletion in Hbase? Mention what are the three types of tombstone markers in Hbase?
+Explain how does Hbase actually delete a row?
+Explain what happens if you alter the block size of a column family on an already occupied database?
+Mention the difference between Hbase and Relational Database?
+What is HBaseFsck class?
+What are the main key structures of HBase?
+Discuss how you can use filters in Apache HBase
+HBase support syntax structure like SQL yes or No?
+What is the meaning of compaction in HBase?
+How will you implement joins in HBase?
+Explain JMX concerning HBSE
+What is the use of MasterServer?
+Define the Term Thrift.
+Why use HColumnDescriptor class?
+What is a cell in HBase?
+What is a Bloom filter?
+Tell me about the types of HBase Operations?
+What is the use of HBase HMaster?
+Which technique can you use in HBase to access HFile directly without the help of HBase?
+Can the region server will be located on all DataNodes?
+Name the filter which accepts the page size as the parameter in HBase?
+When would you use HBase?
+What is the use of get method?
+Define the difference between Hive and HBase?
+Explain the data model of HBase.
+Define column families?
+Define standalone mode in HBase?
+What is decorating Filters?
+What is RegionServer?
+What are the data manipulation commands of HBase?
+What happens when you issue a delete command in HBase?
+What are different tombstone markers in HBase?
+HBase blocksize is configured on which level?
+Which command is used to run HBase Shell?
+Which command is used to show the current HBase user?
+What is the full form of MSLAB?
+Define LZO?
+What is HBase Fsck?
+What is REST?
+What is Nagios?
+What is the use of ZooKeeper?
+Define catalog tables in HBase?
+Define compaction in HBase?
+Explain what is Hbase?
+Explain why to use Hbase?
+Mention what are Key Components of Hbase?
+What is the Role of Master Server in Hbase?
+Explain what does Hbase consists of?
+What is the Role of Zookeeper in Hbase?
+Mention how many operational commands in Hbase?
+When do we need to disable a table in Hbase?
+Explain what is Wal and Hlog in Hbase?
+What are the different Types of Filters used in Hbase?
+In Hbase what is Column Families?
+Name three disadvantages Hbase has as compared to Rdbms?
+Explain what is the Row Key?
+Is Hbase a scale out or scale up process?
+Explain deletion in Hbase?
+What are the step in writing something into Hbase by a Client?
+Explain how does Hbase actually delete a Row?
+What is compaction in Hbase?
+Explain what happens if you alter the Block Size of a column Family on an already occupied Database?
+What are the different compaction types in Hbase?
+What is a Cell in Hbase?
+What is the Scope of a Rowkey in Hbase?
+What is the Role of the Class Hcolumndescriptor in Hbase?
+What is a Namespace in Hbase?
+What is the Lower Bound of Versions in Hbase?
+What is Hotspotting in Hbase?
+What is Ttl in Hbase?
+Why do we Pre create empty Regions?
+Does Hbase support Table Joins?
+Which File in Hbase is designed after Sstable File of Bigtable?
+What is a Hbase Store?
+What are the Two Types of Table Design Approach in Hbase?
+When do we do Manual Region Splitting?
+In which scenario should we consider creating a short and wide Hbase Table?
+In Hbase what is Log Splitting?
+How does Hbase support Bulk Data Loading?
+Why Multiwal is Needed?
+How does Hbase provide High Availability?
+How does Wal help when a Regionserver Crashes?
+What is Hregionserver in Hbase?
+What are the different Block Caches in Hbase?
+Table of Contents
+
+Kubernetes
+How to do maintenance activity on the K8 node?
+How do we control the resource usage of POD?
+What are the various K8's services running on nodes and describe the role of each service?
+What is PDB (Pod Disruption Budget)?
+WhatвЂ™s the init container and when it can be used?
+What is the role of Load Balance in Kubernetes?
+What are the various things that can be done to increase Kubernetes security?
+How to monitor the Kubernetes cluster?
+How to get the central logs from POD?
+How to turn the service defined below in the spec into an external one?
+How to configure TLS with Ingress?
+Why use namespaces? What is the problem with using the default namespace?
+In the following file which service and in which namespace is referred?
+What is an Operator?
+Why do we need Operators?
+What is GKE?
+What is Ingress Default Backend?
+How to run Kubernetes locally?
+What is Kubernetes Load Balancing?
+What the following in the Deployment configuration file mean?
+What is the difference between Docker Swarm and Kubernetes?
+How to troubleshoot if the POD is not getting scheduled?
+How to run a POD on a particular node?
+What are the different ways to provide external network connectivity to K8?
+How can we forward the port 8080 container to 8080 service to 8080 ingress to 80 browser and how it can be done?
+Table of Contents
+
+SQL
+Write sql query to get the second highest salary among all employees?
+There are multiple ways to get the second highest salary among all employees.
+How can we retrieve alternate records from a table in oracle?
+Write sql query to find max salary and department name from each department.
+Write sql query to find records in table a that are not in table b without using not in operator.
+What is the result of following query?
+Write sql query to find employees that have same name and email.
+Write sql query to find max salary from each department.
+Write sql query to get the nth highest salary among all employees.
+How can you find 10 employees with odd number as employee id?
+Write sql query to get the names of employees whose date of birth is between 01/01/1990 to 31/12/2000.
+Write sql query to get the quarter from date.
+Write query to find employees with duplicate email.
+Write a query to find all employee whose name contains the word "rich", regardless of case.
+Is it safe to use rowid to locate a record in oracle sql queries?
+What is a pseudoпїЅolumn?
+What are the reasons for denormalizing the data?
+What is the feature in sql for writing if and else statements?
+What is the difference between delete and truncate in sql?
+What is the difference between ddl and dml commands in sql?
+Why do we use escape characters in sql queries?
+What is the difference between primary key and unique key in sql?
+What is the difference between inner join and outer join in sql?
+What is the difference between left outer join and right outer join?
+What is the datatype of rowid?
+What is the difference between where clause and having clause?
+How will you calculate the number of days between two dates in mysql?
+What are the different types of triggers in mysql?
+What are the differences between heap table and temporary table in mysql?
+What is a heap table in mysql?
+What is the difference between blob and text data type in mysql?
+What will happen when auto increme on an integer column reaches max value in mysql?
+What are the advantages of mysql as compared with oracle db?
+What are the disadvantages of mysql?
+What is the difference between char and varchar datatype in mysql?
+What is the use of i am a dummy flag in mysql?
+How can we get current date and time in mysql?
+What is the difference between timestamp in unix and mysql?
+How will you limit a mysql query to display only top 10 rows?
+What is automatic initialization and updating for timestamp in a mysql table?
+How can we get the list of all the indexes on a table?
+What is savepoint in mysql?
+What is the difference between rollback to savepoint and release savepoint?
+How will you search for a string in mysql column?
+How can we find the version of the mysql server and the name of the current database by select query?
+What is the use of ifnull operator in mysql?
+How will you check if a table exists in mysql?
+How will you see the structure of a table in mysql?
+What are the objects that can be created by create statement in mysql?
+How will you see the current user logged into mysql connection?
+What is the difference between batch and interactive modes of mysql?
+How can we get a random number between 1 and 100 in mysql?
+What does sql in mysql stand for?
+What does a mysql database contain?
+How can you interact with mysql?
+What is mysql database queries?
+What are some common mysql commands?
+How do you create a database in mysql?
+How do you create a table using mysql?
+How do you insert data into mysql?
+How do you remove a column from a database?
+How to create an index in mysql?
+How to delete data from a mysql table?
+How do you view a database in mysql?
+What are the numeric data types in mysql?
+What are the string data types in mysql?
+What are the temporal data types in mysql?
+What is blob in mysql?
+How to add users in mysql?
+What is mysql views?
+How do you create and execute views in mysql?
+What is mysql triggers?
+How many triggers are possible in mysql?
+What is the mysql server?
+What are the mysql clients and utilities?
+Can you explain the logical architecture of mysql?
+What is scaling in mysql?
+What is sharding in sql?
+What are transaction storage engines in mysql?
+What is mysql?
+What are some advantages of using mysql?
+What do you mean by databases?
+Query to find second highest marks of a student?
+Query to find duplicate rows in table?
+What is the query to fetch first record from student table?
+What is the query to fetch last record from student table?
+What is query to display first 4 records from student table?
+What is query to display last 3 records from student table?
+What is query to display nth record from student table?
+How to get 3 highest marks from student table?
+How to display odd rows in student table?
+How to display even rows in student table?
+How can i create table with same structure of student table?
+Select all records from student table whose name is a and b.
+What is ddl and dml and dcl?
+How do you get the number of rows affected by query?
+If the value in the column is repeatable and how do you find out unique values?
+How do you return hundred books starting from 25th?
+You wrote search engine that should retrieve 10 results at a time but at the same time you do like to know how many rows there are total.
+How would you write a query to select all teams that won either 2 and 4 and 6 or 8 games?
+How would you select all users whose phone number is null?
+How do you find out which auto increment was assigned on the last insert?
+On executing delete statement i keep getting the error about foreign key constraint failing so what do i do?
+When would you use order by in delete statement?
+How can you see all indexes defined for a table?
+How would you delete column?
+How would you change a table to innodb?
+How do you concatenate strings in mysql?
+How do you get a portion of string?
+What is the difference between char length and length?
+How do you convert string to utf-8?
+How do you get month from timestamp?
+How do you offload the time and date handling to mysql?
+How do you add three minutes to a date?
+What"s the difference between unix timestamps and mysql timestamps?
+How do you convert between unix timestamps and mysql timestamps?
+What are enums used for in mysql?
+How are enums and sets represented internally?
+How do you start and stop mysql on windows?
+How do you start mysql on linux?
+Explain the difference between mysql and mysql interfaces in php?
+What"s the default port for mysql server?
+What does tee command do in mysql?
+Can you save your connection settings to a conf file?
+How do you change a password for an existing user via mysqladmin?
+Use mysqldump to create a copy of the database?
+Have you ever used mysql administrator and mysql query browser?
+What are some good ideas regarding user security in mysql?
+Explain the difference between myisam static and myisam dynamic?
+What does myisamchk do?
+Explain advantages of innodb over myisam?
+Explain advantages of myisam over innodb?
+What are heap tables in mysql?
+How do you control the max size of a heap table?
+What are csv tables?
+Explain federated tables?
+What is serial data type in mysql?
+What happens when the column is set to auto increment and you reach the maximum value for that table?
+Explain the difference between bool, tinyint and bit?
+Explain the difference between float, double and real?
+What happens if a table has one column defined as timestamp?
+But what if you really want to store the timestamp data, such as the publication date of the article?
+Explain data type timestamp default current_timestamp on update current_timestamp?
+What does timestamp on update current_timestamp data type do?
+If i created a column with data type varchar(3), what would i expect to see in mysql table?
+General information about mysql.
+Why use mysql?
+How mysql optimizes distinct?
+How mysql optimizes limit?
+Mysql speed of delete queries ?
+What is the difference between mysql_fetch_array and mysql_fetch_object?
+What are the different table present in mysql?
+What is primary key?
+What is foreign key?
+What is index?
+What is join?
+What is union?
+What is isam?
+What is innodb?
+What is bdb berkeleydb?
+What is csv?
+What is transaction?
+What is commit?
+What is rollback?
+How many groups of data types?
+What is the differences between char and nchar?
+How to escape special characters in sql statements?
+How to concatenate two character strings?
+How to enter characters as hex numbers?
+How to enter boolean values in sql statements?
+How to convert numeric values to character strings?
+How to use in conditions?
+How to use like conditions?
+How to present a past time in hours and minutes and seconds?
+How to add a new column to an existing table in mysql?
+How to delete an existing column in a table?
+How to rename an existing column in a table?
+How to rename an existing table in mysql?
+How to create a table index in mvsql?
+How to get a list of indexes of an existing table?
+How to drop an existing index in mysql?
+How to drop an existing view in mysql?
+How to create a new view in mysql?
+How to increment dates by 1111 mysql?
+Explain what is a database?
+Explain what is dbms?
+Explain what is rdbms?
+What are the popular database management systems in it industry?
+Explain what is sql?
+Explain what is table in a database?
+Explain what is a field in a database and record in a database?
+What is the use of nvl function?
+Explain what is a column in a table?
+What are the different types of sql commands?
+What are the different ddl commands in sql?
+What are the different dml commands in sql?
+What are the different dcl commands in sql?
+What are the different tcl commands in sql?
+Explain what is an index?
+Explain what is a view?
+Explain what is a subquery ?
+What is the difference between rename and alias?
+What is a join?
+What are the different types of joins?
+What are sql constraints?
+What are the constraints available in sql?
+What is a unique key and primary key and foreign key?
+What is the difference between unique and primary key constraints?
+What is a null value?
+What is normalization?
+What is stored procedure?
+What is a trigger?
+List out the acid properties and explain?
+What is the difference between delete, truncate and drop command?
+What is the difference between having and where clause?
+What are aggregate functions in sql?
+What are string functions in sql?
+Explain the working of sql privileges?
+How many types of privileges are available in sql?
+What is sql injection?
+What is the difference between clustered and non-clustered indexes?
+What is relationship and how many types of relationship are there?
+What is collation?
+What is database white box testing and black box testing?
+What are the advantages of views?
+What is schema?
+What is the difference between sql and mysql?
+What is sql sandbox in sql server?
+What are the steps to take to improve performance of a poor performing query?
+What is a deadlock and what is a live lock?
+What is blocking and how would you troubleshoot it?
+Explain the different types of backups available in sql server.
+What is database isolation in sql server?
+What is a schema in sql server 2005? explain how to create a new schema in a database?
+Explain how to create a scrollable cursor with the scroll option.
+Explain how to create a dynamic cursor with the dynamic option?
+What are database files and filegroups?
+Describe in brief databases and sql server databases architecture.
+What are the steps to improve the performance of a query?
+How would you use the sp_ functions to identify the blocking problems?
+What are the different types of backups?
+What are the different levels of isolation?
+How can you start the sql server in the single user mode and the minimal configuration mode?
+How can you know that statistics should be updated?
+What is replication in sql server?
+Can we initiate a external com object from within sql?
+What is a schema? how is it useful in sql servers?
+What is write ahead log?
+What is the use of check points in the transaction logs?
+What is a column with identity?
+What are scrollable cursors? how are they created?
+What is raid and how does it help storage of databases?
+How can you identify the version number of the sql server installed?
+What is the use of cascade constraints?
+What is the function of a odbc manager ?
+What are the different types of indexes available in sql server?
+What is the difference between clustered and non-clustered index?
+What are the high-availability solutions in sql server?
+What is denormalization and when would you go for it?
+How do you implement one-to-one, one-to-many and many-to-many relationships while designing tables?
+What is the difference between a primary key and a unique key?
+What are user defined datatypes and when you should go for them?
+What is bit datatype and what is the information that can be stored inside a bit column?
+Define candidate key and alternate key and composite key.
+What is a transaction and what are acid properties?
+Explain different isolation levels?
+What type of index will get created after executing the above statement?
+Differences between active and active or active and passive cluster configurations?
+What is lock escalation?
+What is the difference between delete table and truncate table commands?
+What are constraints?
+Whar is an index and what are the types of indexes and how many clustered indexes can be created on a table?
+How to restart sql server in single user mode and how to start sql server in minimal configuration mode?
+What are statistics under what circumstances they go out of date and how do you update them?
+If there is significant change in the key values in the index?
+What is database replicaion and what are the different types of replication you can set up in sql server?
+What are the components of physical database structure of oracle database?
+What are the components of logical database structure of oracle database?
+What is a tablespace?
+What is system tablespace and when is it created?
+Explain the relationship among database and tablespace and data file.
+What is schema?
+What are schema objects?
+Can objects of the same schema reside in different tablespaces?
+Can a tablespace hold objects from different schemes?
+What is oracle table?
+What is an oracle view?
+What is partial backup?
+What is mirrored on line redo log?
+What is full backup?
+Can a view based on another view?
+Can a tablespace hold objects from different schemes?
+Can objects of the same schema reside in different tablespaces?
+What is the use of control file?
+Do view contain data?
+What are the referential actions supported by foreign key integrity constraint?
+What are the type of synonyms?
+What is an index segment?
+What are the different type of segments?
+What are clusters?
+What is an integrity constrains?
+What is an index?
+What is an extent?
+What is a view?
+What is table?
+Can a view based on another view?
+What are the advantages of views?
+What is an oracle sequence?
+What is a synonym?
+What are the types of synonyms?
+What is a private synonym?
+What is a public synonym?
+What are synonyms used for?
+What is an oracle index?
+How are the index updates?
+What is rollback segment?
+What are the characteristics of data files?
+How to define data block size?
+What does a control file contain?
+What is difference between unique constraint and primary key constraint?
+What is index cluster?
+When does a transaction end?
+How does one create a new database?
+What database block size should i use?
+What are the different approaches used by optimizer in choosing an execution plan?
+What does rollback do?
+What is cost based approach to optimization?
+What does commit do?
+Define transaction?
+What is read only transaction?
+What is a deadlock?
+What is a schema?
+What is a cluster key?
+What is parallel server?
+What is cluster?
+What is an index and how it is implemented in oracle database?
+What is a database instance?
+What is the use of analyze command?
+What is default tablespace?
+What are the system resources that can be controlled through profile?
+What is tablespace quota?
+What are the different levels of auditing?
+What is statement auditing?
+What are the database administrators utilities avaliable?
+How can you enable automatic archiving?
+What are roles and how can we implement roles?
+What are roles?
+What are the uses of roles?
+What is privilege auditing?
+What is object auditing?
+What is auditing?
+Where are my tempfiles?
+How do i find used or free space in a temporary tablespace?
+What is a profile?
+How will you enforce security using stored procedures?
+How does one get the view definition of fixed views or tables?
+What are the dictionary tables used to monitor a database spaces?
+What is user account in oracle database?
+What is dynamic data replication?
+What is two phase commit?
+How can you enforce referential integrity in snapshots?
+What is a snapshot?
+What is the mechanism provided by oracle for table replication?
+What are the various type of snapshots?
+Describe two phases of two phase commit?
+What is snapshot log?
+What are the benefits of distributed options in databases?
+What are the options available to refresh snapshots?
+What is a snapshot log?
+What is distributed database?
+How can we reduce the network traffic?
+Differentiate simple and complex and snapshots?
+What are the built-ins used for sending parameters to forms?
+Is the after report trigger fired if the report execution fails?
+Does a before form trigger fire when the parameter form is suppressed?
+What is sga?
+What is a shared pool?
+What is mean by program global area?
+What is a data segment?
+What are the factors causing the reparsing of sql statements in sga?
+Does a view contain data?
+What is trigger associated with the timer?
+What are the triggers associated with image items?
+What are the different windows events activated at runtimes?
+When do you use data parameter type?
+What is difference between open_form and call_form?
+What is new_form built in?
+What is the difference when flex mode is mode on and when it is off?
+What is the difference when confine mode is on and when it is off?
+What are visual attributes?
+What are the vbx controls?
+What is the use of transactional triggers?
+How do you create a new session while open a new form?
+What are the ways to monitor the performance of the report?
+Explain about horizontal and vertical tool bar canvas views?
+What is the purpose of the product order option in the column property sheet?
+What is the use of image_zoom built-in?
+What is a timer?
+What are the two phases of block coordination?
+What are most common types of complex master-detail relationships?
+What is a text list?
+What is term?
+What is use of term?
+What is pop list?
+What is the maximum no. of chars the parameter can store?
+What are the default extensions of the files created by library module?
+How do you display console on a window?
+What are the coordination properties in a master-detail relationship?
+What are the different parameter types?
+What are the types of calculated columns available?
+Explain about stacked canvas views?
+What is the difference between show_editor and edit_textitem?
+What are the different file extensions that are created by oracle reports?
+What is the basic data structure that is required for creating an lov?
+What is the maximum allowed length of record group column?
+Which parameter can be used to set read level consistency across multiple queries?
+What are the different types of record groups?
+From which designation is it preferred to send the output to the printed?
+What is difference between post database commit and post-form commit?
+With which function of summary item is the compute at options required?
+What are parameters?
+What are the three types of user exits available?
+How many windows in a form can have console?
+Is it possible to modify an external query in a report which contains it?
+Does a grouping done for objects in the layout editor affect the grouping done in the data model editor?
+If a break order is set on a column would it affect columns which are under the column?
+Can you pass data parameters to forms?
+Is it possible to link two groups inside a cross products after the cross products group has been created?
+What are the different modals of windows?
+What are modal windows?
+What is the advantage of the library?
+What is lexical reference? how can it be created?
+What is system.coordination_operation?
+What is synchronize?
+What use of command line parameter cmd file?
+What is a text_io package?
+What is forms_ddl?
+What are the built-ins used for processing rows?
+What are the built-ins used for getting cell values?
+At least how many set of data must a data model have before a data model can be based on it?
+To execute row from being displayed that still use column in the row which property can be used?
+What is the remove on exit property?
+What is a difference between pre-select and pre-query?
+What are the built-ins used for finding object id function?
+Any attempt to navigate programmatically to disabled form in a call_form stack is allowed?
+How can a break order be created on a column in an existing group? what are the various sub events a mouse double click event involves?
+What is the use of place holder column? what are the various sub events a mouse double click event involves?
+What are the built-ins used for creating and deleting groups?
+What are the different types of delete details we can establish in master-details?
+Where is the external query executed at the client or the server?
+Where is a procedure return in an external pl/sql library executed at the client or at the server?
+What is coordination event?
+What is the difference between ole server & ole container?
+What is an object group?
+What is the difference between the conventional and direct path loader?
+How does one load multi-line records?
+Why is where clause faster than group filter or format trigger?
+Difference between substr and instr?
+What is rman?
+What are two parts of procedure?
+What are the datatypes available in plsql?
+What is overloading of procedures?
+What is master detail relationship?
+How many number of columns a record group can have?
+Table of Contents
+
+Redshift
+What is the purpose of the Redshift COPY command's ACCEPTINVCHARS option
+What is the difference between dense compute and dense storage node types in Redshift
+What is the purpose of the VACUUM command in Amazon Redshift
+Can you restore a Redshift cluster to a specific point in time
+What is the maximum size of a single Amazon Redshift cluster
+Can you use Redshift with AWS Glue DataBrew for data preparation and cleansing
+Can you create user-defined functions (UDFs) in Amazon Redshift
+Can you resize a Redshift cluster while it is running
+How does Redshift handle data distribution when a new node is added to the cluster
+What is the purpose of the COPY command in Amazon Redshift
+What is a Redshift cluster
+How does Redshift handle query optimization for complex aggregations and window functions
+Can you use Redshift with Amazon Kinesis Data Firehose for real-time data ingestion
+How can you monitor the performance of Amazon Redshift
+How can you manage Redshift query concurrency
+What is the maximum number of columns you can have in a table in Amazon Redshift
+What is the purpose of the Redshift COPY command's COMPUPDATE option
+Can you restore a Redshift cluster to a different cluster
+What is the difference between a Redshift snapshot and a Redshift cluster backup
+What is the purpose of the Redshift COPY command's GZIP option
+What is the purpose of the Redshift COPY command's ENCRYPTED option
+What is the maximum size of a single table in Amazon Redshift
+What is columnar storage, and why is it important in Redshift
+Can you use Redshift to query and analyze semi-structured data formats like JSON or Avro
+How does Redshift Spectrum work
+What is a Redshift Spectrum
+What is the purpose of the ANALYZE command in Redshift
+Can you encrypt data in Amazon Redshift
+Can you use Redshift as an OLTP (Online Transaction Processing) database
+Can you use Redshift with AWS PrivateLink for private network access
+What is the purpose of the Redshift VACUUM command's SORTONLY option
+What is the purpose of the Redshift Query Optimizer
+Can you use Redshift with Amazon Athena for ad-hoc SQL queries on S3 data
+How can you load data into Amazon Redshift
+How can you improve query performance for small tables in Amazon Redshift
+How does Redshift handle data distribution in a cluster
+Can you create temporary tables in Amazon Redshift
+What is the purpose of the Redshift VACUUM command's REINDEX option
+How can you export data from Amazon Redshift to Amazon S3
+Can you use Redshift with AWS Glue for data cataloging and ETL
+What is the purpose of the Redshift COPY command's IGNOREHEADER option
+How can you secure data in Amazon Redshift
+How can you take backups of Amazon Redshift clusters
+What is the purpose of the Redshift UNLOAD command's MANIFEST option
+How does Amazon Redshift achieve scalability
+How can you optimize query performance in Amazon Redshift
+Can you use Redshift cross-region replication for disaster recovery
+Can you use Redshift with AWS CloudTrail for audit trail and compliance
+How does Redshift handle query optimization for dimensionally modeled data warehouses
+What is the difference between a leader node and a compute node in Amazon Redshift
+What is a distribution key in Amazon Redshift
+What is the purpose of the Redshift COPY command's MAXERROR option
+Can you create indexes on tables in Amazon Redshift
+How is data distributed in Amazon Redshift
+What is the purpose of the Redshift ANALYZE command's VERBOSE option
+Can you load data into Redshift from multiple files in parallel
+What is the maximum number of tables you can create in an Amazon Redshift database
+How does Redshift handle query optimization for subqueries and correlated subqueries
+Can you restore a Redshift snapshot to a different AWS region
+How does Redshift handle query optimization for complex join operations
+What is the purpose of the Redshift EXPLAIN command
+Can you use Redshift with AWS Lambda for serverless data processing
+Can you perform updates and deletes on tables in Amazon Redshift
+What is the purpose of the Redshift REINDEX command
+How can you automate data loading into Amazon Redshift
+What is the purpose of the UNLOAD command in Redshift
+Can you use Redshift Federated Query to query data in other AWS data sources
+What happens when a compute node fails in Amazon Redshift
+What is the purpose of the Redshift VACUUM command's DELETE option
+Can you schedule query executions in Amazon Redshift
+Can you join tables from Redshift and Redshift Spectrum in a single query
+How does Redshift handle query optimization for time-series data
+Can you use Redshift with AWS Key Management Service (KMS) for encryption key management
+What is the purpose of the Redshift COPY command's TRUNCATECOLUMNS option
+Can you use Redshift with AWS Step Functions for serverless workflow orchestration
+How can you optimize storage in Amazon Redshift
+How can you resize a Redshift cluster
+What is the purpose of the Redshift ANALYZE command's DELETE option
+What are the key benefits of using Amazon Redshift
+How does Redshift handle query optimization for star schema data models
+What is a sort key in Amazon Redshift
+How does Redshift handle data backup and durability
+Can you enable automatic compression encoding for columns in Amazon Redshift
+Can you run Redshift queries from third-party BI tools
+How does Redshift handle query optimization for data filtering and predicate pushdown
+Can you create materialized views in Amazon Redshift
+How does Redshift handle query optimization for large-scale joins and aggregations
+Can you perform cross-database queries in Amazon Redshift
+What is Amazon Redshift
+What is the recommended way to load large amounts of data into Redshift
+Can you use Redshift with AWS Identity and Access Management (IAM) for access control
+Can you use Redshift with AWS Lake Formation for data lake management and access control
+What is the difference between VACUUM and ANALYZE commands in Redshift
+How does Redshift handle data compression
+Can you create Redshift tables from existing Amazon S3 data
+Can you enable audit logging in Amazon Redshift
+Can you use Redshift with Amazon QuickSight for data visualization and analytics
+Can you change the sort key or distribution key of an existing table in Redshift
+What is the purpose of the Redshift WLM (Workload Management) configuration
+How can you monitor query performance in Amazon Redshift
+Table of Contents
+
+Greenplum
+Can you explain the process of configuring and managing Greenplum resource queues
+How does Greenplum handle data skew when using distribution keys
+How does Greenplum handle data encryption at rest and in transit
+Can Greenplum utilize external indexing mechanisms for improved query performance
+Can Greenplum leverage machine learning algorithms for advanced analytics
+How does Greenplum handle resource management and query prioritization
+How does Greenplum handle workload balancing and automatic query routing in a multi-cluster environment
+How does Greenplum handle query optimization for star schema or snowflake schema models
+Can Greenplum integrate with other tools and frameworks
+Can Greenplum handle streaming data and real-time analytics
+How does Greenplum handle data access control and row-level security
+Can Greenplum perform distributed joins across multiple tables
+How does Greenplum handle data lineage and data governance requirements
+Can you explain the role of the Greenplum Query Dispatcher
+Can Greenplum leverage workload management to prioritize different types of queries
+Can you explain the concept of query execution plans in Greenplum
+Can you explain the process of scaling Greenplum for increased data volumes and performance
+How does Greenplum handle data compaction and vacuuming to optimize storage utilization
+How does Greenplum handle data masking and data obfuscation for non-production environments
+How does Greenplum handle data distribution and performance optimization for wide tables
+Can Greenplum utilize external storage systems for data storage and processing
+How does Greenplum handle workload balancing across segments in a distributed environment
+Can you explain the process of creating and managing database roles and permissions in Greenplum
+How does Greenplum handle query plan caching and reuse
+Can Greenplum leverage distributed in-database analytics for advanced computations
+What is the role of the Query Optimizer in Greenplum
+Can you explain the process of data export from Greenplum to external systems
+How does Greenplum handle data storage formats like Parquet or Avro
+Can you explain the process of data migration from other databases to Greenplum
+How does Greenplum handle data archiving and retention in compliance with data regulations
+Can you explain the process of data loading in Greenplum
+How does Greenplum handle data versioning and schema evolution
+How does Greenplum handle query execution on distributed tables with foreign key relationships
+How does Greenplum handle data partitioning
+Can you explain the process of data distribution and redistribution in Greenplum
+How does workload management work in Greenplum
+How does Greenplum handle data replication for distributed environments
+How does Greenplum achieve parallel query execution
+How does Greenplum handle concurrency control in a multi-user environment
+Can you explain the concept of data skew and its impact on query performance
+Can you explain the concept of workload management and how it is implemented in Greenplum
+Can Greenplum leverage external data sources for data integration and analytics
+Can you explain the process of table reorganization and vacuuming in Greenplum
+How does Greenplum handle large-scale data analytics
+Can you explain the process of upgrading the Greenplum cluster software
+How does Greenplum handle data skew detection and mitigation
+Does Greenplum support high availability and fault tolerance
+Can Greenplum leverage external authentication mechanisms like LDAP or Kerberos
+Can Greenplum leverage external data connectors for data integration with other databases or systems
+Can you explain the process of table partitioning and data pruning in Greenplum
+How does Greenplum handle data privacy and compliance requirements
+Can Greenplum leverage in-memory processing for improved query performance
+How does Greenplum handle query optimization for complex analytical queries
+How does Greenplum handle data backup and recovery in a distributed environment
+Can Greenplum handle complex data types like arrays or nested structures
+Can Greenplum perform data deduplication and data cleansing operations
+Can Greenplum integrate with business intelligence (BI) tools for data visualization
+How does Greenplum handle data replication and synchronization for disaster recovery purposes
+How does Greenplum handle data replication and synchronization for geographically distributed clusters
+How does Greenplum handle data replication and synchronization in a multi-site environment
+Can Greenplum handle unstructured or semi-structured data formats like JSON or XML
+Can you explain the process of data replication and synchronization between on-premises and cloud-based Greenplum instances
+How does Greenplum handle data distribution and performance optimization for partitioned tables
+What is the difference between Greenplum and traditional relational databases like PostgreSQL
+Can Greenplum integrate with data catalog and metadata management systems
+Can Greenplum handle real-time data processing
+Can you explain the key features of Greenplum database
+What programming languages can be used to interact with Greenplum
+Can you explain the process of upgrading Greenplum extensions
+How does Greenplum handle data archiving and data retention policies
+Can you explain the process of data redistribution and query optimization for hash-distributed tables
+Can you explain the concept of data distribution in Greenplum
+How does Greenplum handle data encryption for sensitive information like personally identifiable information (PII)
+How does Greenplum handle data security
+What is the architecture of Greenplum database
+How does Greenplum handle data skew and hotspot situations
+Can Greenplum leverage query pipelining and parallel query execution for improved performance
+Can you explain the process of upgrading Greenplum database to a newer version
+Can Greenplum utilize data partition elimination for improved query performance
+How does Greenplum handle query performance tuning
+What is columnar storage in Greenplum
+How does Greenplum handle data compression
+How does Greenplum handle concurrent data updates and maintain data consistency
+How does Greenplum handle data privacy and anonymization techniques for sensitive data
+Can Greenplum leverage workload management for dynamic resource allocation and query prioritization
+What are the advantages of using Greenplum over other analytical databases like Apache Hive or Apache Impala
+Can you explain the role of Greenplum Interconnect in query processing
+How does Greenplum handle data deduplication and data aggregation operations
+How does Greenplum handle data consistency in case of segment failures
+How does Greenplum handle data replication for high availability and disaster recovery purposes
+How does Greenplum handle concurrent data loading and query processing
+How does Greenplum handle data security and access controls
+Can you explain the process of data partitioning and table distribution in Greenplum
+What are the different data distribution strategies supported by Greenplum
+Can Greenplum integrate with data orchestration frameworks like Apache Airflow
+How does Greenplum handle data consistency in a distributed environment
+How does Greenplum handle data backup and recovery
+What is Greenplum database
+How does Greenplum handle data validation and error handling during data loading
+How does Greenplum handle data distribution and query optimization in a multi-tenant environment
+Table of Contents
+
+Data Structures
+What is data structure?
+What are the goals of data structure?
+What does abstract data type mean?
+What is the difference between a stack and an array?
+What do you mean by recursive definition?
+What is sequential search?
+What actions are performed when a function is called?
+What actions are performed when a function returns?
+What is a linked list?
+What are the advantages of linked list over array (static data structure)?
+We apply binary search algorithm to a sorted linked list why?
+What do you mean by free pool?
+What do you mean by garbage collection?
+What do you mean by overflow and underflow?
+What are the disadvantages array implementations of linked list?
+What is a queue?
+What is a priority queue?
+What are the disadvantages of sequential storage?
+What are the disadvantages of representing a stack or queue by a linked list?
+What is dangling pointer and how to avoid it?
+What are the disadvantages of linear list?
+Define circular list?
+What are the disadvantages of circular list?
+Define double linked list?
+Is it necessary to sort a file before searching a particular item ?
+What are the issues that hamper the efficiency in sorting a file?
+Calculate the efficiency of sequential search?
+Is any implicit arguments are passed to a function when it is called?
+Parenthesis is never required in postfix or prefix expressions and why?
+List out the areas in which data structures are applied extensively?
+What are the major data structures used in the following areas network data model and hierarchical data model?
+If you are using c language to implement the heterogeneous linked list and what pointer type will you use?
+Minimum number of queues needed to implement the priority queue?
+What is the data structures used to perform recursion?
+What are the notations used in evaluation of arithmetic expressions using prefix and postfix forms?
+List out few of the application of tree data structure?
+List out few of the applications that make use of multilinked structures?
+What is the type of the algorithm used in solving the 8 queens problem?
+In an avl tree, at what condition the balancing is to be done?
+In rdbms what is the efficient data structure used in the internal storage representation?
+What is a spanning tree?
+Does the minimal spanning tree of a graph give the shortest distance between any 2 specified nodes?
+Difference between calloc and malloc?
+Which file contains the definition of member functions?
+How is any data structure application is classified among files?
+What member function places a new node at the end of the linked list?
+What is linked list?
+What does each entry in the link list called?
+How is the front of the queue calculated?
+Which process places data at the back of the queue?
+What is the relationship between a queue and its underlying array?
+What is a queue?
+What does isempty member method determines?
+## what method is used to place a value onto the top of a stack?
+Run time memory allocation is known as?
+How do you assign an address to an element of a pointer array?
+Why do we use a multidimensional array?
+Is pointer a variable?
+How many parts are there in a declaration statement?
+What is impact of signed numbers on the memory?
+What is precision?
+What is the difference between null and void pointer?
+What is the difference between array and stack?
+Tell how to check whether a linked list is circular?
+Whether linked list is linear or non-linear data structure?
+If you are using c language to implement the heterogeneous linked list and what pointer type will you use?
+What is a node class?
+When can you tell that a memory leak will occur?
+How many trees are possible with 10 nodes?
+How can i search for data in a linked list?
+Define data structures?
+Define primary data structures?
+Define static data structures?
+Define dynamic data structures?
+List some dynamic data structures in c?
+Define linear data structures?
+Define non-linear data structures?
+Define linked lists?
+State the different types of linked lists?
+List the basic operations carried out in a linked list?
+List out the advantages of using a linked list?
+List out the disadvantages of using a linked list?
+List out the applications of a linked list?
+Define a stack?
+List out the basic operations that can be performed on a stack?
+State the different ways of representing expressions?
+State the advantages of using infix notations?
+State the advantages of using postfix notations?
+State the rules to be followed during infix to postfix conversions?
+State the rules to be followed during infix to prefix conversions?
+State the difference between stacks and linked lists?
+Mention the advantages of representing stacks using linked lists than arrays?
+Define a queue?
+Define a priority queue?
+State the difference between queues and linked lists?
+Define a deque?
+Why you need a data structure?
+What do you mean by shortest path?
+What do you mean by articulation point?
+Define biconnectivity?
+What do you mean by back edge?
+What do you mean by tree edge?
+What do you mean by breadth first search?
+List the two important key points of depth first search?
+Define graph traversals?
+Name two algorithms two find minimum spanning tree?
+What is a minimum spanning tree?
+What are the two traversal strategies used in traversing a graph?
+When is a graph said to be weakly connected?
+What is meant by strongly connected in a graph?
+What is an acyclic graph?
+What is a cycle or a circuit?
+What is a simple path?
+Define path in a graph?
+Define indegree of a graph?
+Define outdegree of a graph?
+What is a weighted graph?
+What is a simple graph?
+What is a loop?
+What is undirected graph?
+What is a directed graph?
+Define adjacent nodes?
+Define graph?
+What is the need for path compression?
+What do you mean by union by weight?
+List the abstract operations in the set?
+Define a set?
+What do you mean by disjoint set adt?
+List the applications of set adt?
+Define an equivalence relation?
+Define a relation?
+Mention one advantage and disadvantage of using quadratic probing?
+List the limitations of linear probing?
+What is the need for extendable hashing?
+What do you mean by rehashing?
+What do you mean by double hashing?
+What do you mean by secondary clustering?
+What do you mean by quadratic probing?
+What do you mean by primary clustering?
+What do you mean by linear probing?
+What do you mean by probing?
+What are the types of collision resolution strategies in open addressing?
+What do you mean by open addressing?
+Write the disadvantages of separate chaining?
+Write the advantage of separate chaining?
+What do you mean by separate chaining?
+What are the collision resolution methods?
+What do you mean by collision in hashing?
+Write the importance of hashing?
+What do you mean by hash function?
+What do you mean by hash table?
+Define hashing?
+What do you mean by the term percolate down?
+What do you mean by the term percolate up?
+What are the applications of priority queues?
+What do you mean by heap order property?
+What do you mean by structure property in a heap?
+What are the properties of binary heap?
+What is the need for priority queue?
+What are the applications of b-tree?
+What do you mean by 2-3-4 tree?
+What do you mean by 2-3 tree?
+Define b tree of order m?
+What is the minimum number of nodes in an avl tree of height h?
+Define heap?
+List the types of rotations available in splay tree?
+What is the idea behind splaying?
+Define splay tree?
+What do you mean by balance factor of a node in avl tree?
+What are the categories of avl rotations?
+What do you mean by balanced trees?
+Define avl tree?
+Define left in threaded tree?
+Define right in threaded tree?
+What is an expression tree?
+What is the use of threaded binary tree?
+Why it is said that searching a node in a binary search tree is efficient than that of a simple binary tree?
+Define ancestor and descendant?
+What do you mean by general trees?
+Define a binary search tree?
+State the demerits of linked representation of binary trees?
+State the merit of linked representation of binary trees?
+State the demerit of linear representation of binary trees?
+State the merits of linear representation of binary trees?
+What are the tasks performed during postorder traversal?
+What are the tasks performed during inorder traversal?
+What are the tasks performed during preorder traversal?
+What are the tasks performed while traversing a binary tree?
+What are the different binary tree traversal techniques?
+What is meant by binary tree traversal?
+State the properties of a binary tree?
+Define a right-skewed binary tree?
+Define a complete binary tree?
+Define a full binary tree ?
+Define non-terminal nodes in a tree?
+Define terminal nodes in a tree?
+Define a path in a tree?
+Define a binary tree?
+Define forest?
+What do you mean by level of the tree?
+Define depth and height of a tree?
+Define depth and height of a node?
+Define parent node?
+Define internal nodes?
+Define leaves?
+Define degree of the node?
+Define root?
+Define a tree?
+Why we need cursor implementation of linked lists?
+List the applications of queues?
+List the applications of stacks?
+What are the types of queues?
+What are the objectives of studying data structures?
+State the difference between persistent and ephemeral data structure?
+State the difference between primitive and non-primitive data types?
+What are the advantages of modularity?
+Define an abstract data type?
+Define data type and what are the types of data type?
+Difference between abstract data type and data type and data structure?
+State the difference between queues and linked lists?
+Table of Contents
+
+Looker
+Can Looker handle streaming data sources
+Can Looker handle unstructured or semi-structured data
+What is the purpose of Looker's Action Hub
+What is the difference between Looker's explore and join types
+How does Looker handle data privacy and compliance requirements
+How does Looker handle data replication and synchronization
+How can Looker handle data lineage in a complex data ecosystem
+How does Looker handle data versioning and change management
+What is the purpose of a Looker dashboard
+Can Looker handle geospatial data analysis
+What are some ways to optimize Looker performance
+What are some best practices for optimizing Looker performance
+What are some limitations of Looker
+Can you explain Looker's data modeling best practices
+Can you explain the concept of a LookML model in Looker
+What is the purpose of Looker's "Always Use SQL Runner" option
+How does Looker handle data lineage and documentation
+Can Looker integrate with external authentication providers
+What is Looker's Explore Embed feature used for
+Can Looker integrate with data cataloging tools
+Can you explain the concept of Looker PDTs (Persistent Derived Tables)
+How does Looker handle data virtualization
+Can Looker handle data anomaly detection
+How does Looker handle data integration
+Can Looker handle data visualization in real-time dashboards
+How does Looker handle data caching
+How can you schedule data deliveries in Looker
+How does Looker handle data modeling for complex data structures
+Can you explain Looker'
+Can Looker handle near real-time data analysis
+What is Looker's Explore Permissions feature
+Can Looker be deployed on-premises or is it only available as a cloud-based solution
+How does Looker handle data security in a cloud-based environment
+How does Looker handle data quality and cleansing
+How does Looker handle data security
+Can Looker handle real-time data
+What is a Looker Explore
+How can Looker integrate with data governance tools
+How does Looker handle data partitioning and sharding
+What are some advantages of using Looker compared to traditional BI tools
+What is the purpose of Looker's content validation feature
+What is a dimension in Looker
+Can Looker be integrated with other BI tools or data visualization platforms
+How does Looker handle data lineage for derived or calculated fields
+How does Looker handle user access controls in a multi-tenant environment
+How can you create a custom visualization in Looker
+Can Looker handle multi-language support for international users
+What is the purpose of a Looker filter
+What is the purpose of Looker's Advanced Scheduling options
+What are some advanced analytical capabilities offered by Looker
+How can you create a calculated field in Looker
+Can Looker be used for data transformation and ETL processes
+Can Looker generate alerts or notifications based on predefined conditions
+Can Looker handle incremental data loads
+What is the purpose of Looker's Liquid syntax in LookML
+What is the purpose of Looke
+How can Looker integrate with data orchestration tools like Apache Airflow
+What is the purpose of Looker's Development Mode
+How does Looker handle data storage and scalability
+Can you explain Looker's dynamic data masking feature
+Can Looker be integrated with data lake platforms like Hadoop or Amazon S3
+Can Looker perform predictive analytics or machine learning
+How does Looker handle data lineage and impact analysis
+What is Looker
+How does Looker handle data versioning and change tracking in LookML models
+How does Looker support collaboration among team members
+Can Looker connect to non-SQL data sources
+Can Looker handle large-scale data processing
+How does Looker handle data replication for disaster recovery purposes
+How does Looker handle data governance in a self-service environment
+How does Looker handle data lineage for transformations applied outside of Looker
+Can Looker handle multi-tenant data environments
+How does Looker handle data governance and compliance
+What is the purpose of Looker's PDT (Persistent Derived Tables) Performance Optimization
+Can you explain Looker's data permissions and access controls
+What are the advantages of using Looker's embedded analytics feature
+What is Looker's scheduling and alerting capability
+What is the purpose of Looker's SQL Runner
+What is the purpose of Looker's PDT (Persistent Derived Tables) Events
+What is Looker's Explore API used for
+Can Looker handle data exploration on semi-structured data formats like JSON or XML
+Can Looker connect to cloud-based data warehouses like Amazon Redshift or Google BigQuery
+Table of Contents
+
+Superset
+What are some ways to optimize query performance in Superset
+Does Superset provide data lineage tracking
+What is Superset's support for user-defined functions (UDFs)
+What is the role of metadata databases in Superset
+How does Superset differ from other BI tools
+Can you define metrics and dimensions in Superset
+What are some security considerations when using Superset in a production environment
+How can you create a new slice in Superset
+What is Superset's support for row-level security (RLS)
+Does Superset support cross-database joins in SQL queries
+Can you share dashboards with other users in Superset
+How does Superset handle data lineage in complex data pipelines
+Can Superset connect to data lakes or distributed file systems
+Can Superset connect to streaming data sources
+What are the different visualization types available in Superset
+Can you create drill-down or drill-through reports in Superset
+What is the Superset Database Metadata Model
+What is Druid in the context of Superset
+Can you create custom SQL functions or macros in Superset
+Can you explain the process of connecting a database to Superset
+Does Superset support multi-tenancy
+Can Superset be used for real-time data streaming analytics
+How can you install Superset
+What is Superset's support for data permissions and data masking
+Does Superset support embedding dashboards in other applications
+What is SQL Lab in Superset
+Can Superset connect to NoSQL databases
+Can Superset integrate with external data catalog systems
+Can Superset connect to cloud-based data warehouses like Amazon Redshift or Google BigQuery
+What is Superset's support for data exploration on streaming data sources
+What are the key components of Superset
+What is Superset's support for dashboard interactivity and filtering
+What is Apache Superset
+What are the advantages of using SQL Lab in Superset
+Can you create custom visualizations in Superset
+What is a dashboard in Superset
+What are Superset's alerting capabilities
+How does Superset handle data caching for queries with dynamic parameters
+What is Superset's support for anomaly detection
+What is the Superset SQL Lab Query History feature
+Does Superset support data lineage across multiple dashboards and slices
+How can you create a new dashboard in Superset
+How does Superset handle large datasets
+What databases does Superset support
+Can you integrate Superset with version control systems
+What is Superset's SQL Lab Ad-Hoc Editor
+How can you create interactive filters in Superset
+What is Superset's support for data storytelling and annotations
+How does Superset handle data security and access control
+What is Superset's approach to data caching and cache invalidation
+Can you integrate Superset with external authentication systems
+What is Superset's support for data access logging and auditing
+What is a slice in Superset
+Does Superset support geospatial data visualization
+How can you secure Superset
+How does Superset handle data lineage and data governance
+How can you extend Superset's functionality
+What is Superset's "Explore" feature
+Can you deploy Superset in a distributed environment
+How can you monitor the performance of Superset
+What are some common security best practices for deploying Superset
+Can Superset handle data from multiple databases or data sources within the same dashboard
+How can you customize the look and feel of Superset's visualizations and dashboards
+What is Superset's support for time-series data analysis
+What is Superset's integration with Apache Airflow
+What is the purpose of the Superset configuration file
+Can Superset handle real-time data processing and visualization
+What is Superset's data caching mechanism
+What is Superset's support for time-zone conversions in visualizations
+Can you integrate Superset with other BI tools or data platforms
+Can you schedule and automate reports in Superset
+Which programming language is Superset primarily built with
+Does Superset support data exploration using natural language queries (NLQ)
