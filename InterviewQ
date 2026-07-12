@@ -1247,7 +1247,7 @@ Hadoop uses Replication to achieve Fault Tolerance and how is this achieved in A
 Explain about Core Components of a distributed Spark Application?
 What do you understand by Lazy Evaluation?
 Define a Worker Node?
-What do you understand by Schemardd?
+What do you understand by SchemaRDD?
 What are the disadvantages of using Apache Spark over Hadoop Mapreduce?
 Is it necessary to install Spark on all Nodes of Yarn Cluster while running Apache Spark on Yarn?
 What do you understand by Executor Memory in Spark Application?
@@ -2690,7 +2690,7 @@ Does Superset support embedding dashboards in other applications
 What is SQL Lab in Superset
 Can Superset connect to NoSQL databases
 Can Superset integrate with external data catalog systems
-Can Superset connect to cloud-based data warehouses like Amazon Redshift or Google BigQuery
+Can Superset connect to cloud-based data warehouses like Amazon Redshift or Google BigQuery?
 What is Superset's support for data exploration on streaming data sources
 What are the key components of Superset
 What is Superset's support for dashboard interactivity and filtering
@@ -2723,8 +2723,8 @@ What is Superset's "Explore" feature
 Can you deploy Superset in a distributed environment
 How can you monitor the performance of Superset
 What are some common security best practices for deploying Superset
-Can Superset handle data from multiple databases or data sources within the same dashboard
-How can you customize the look and feel of Superset's visualizations and dashboards
+Can Superset handle data from multiple databases or data sources within the same dashboard?
+How can you customize the look and feel of Superset's visualizations and dashboards?
 What is Superset's support for time-series data analysis
 What is Superset's integration with Apache Airflow
 What is the purpose of the Superset configuration file
